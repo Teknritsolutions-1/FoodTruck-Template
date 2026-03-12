@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Food Truck</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+NZ+Basic+Guides&family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="../pages/index.html">
+              <span class="logo-icon">
+                <i class="fa-solid fa-truck-fast"></i>
+              </span>
+
+              <span class="logo-text"> StreetBite </span>
+            </a>
+          </div>
+
+          <!-- Hamburger -->
+          <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+
+          <!-- Navigation -->
+          <nav class="nav-menu">
+            <ul>
+              <li class="dropdown">
+                <a href="index.html"
+                  >Home
+                  <span class="arrow"
+                    ><i class="fa-solid fa-chevron-down"></i></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../pages/index.html">Home Page 1</a></li>
+                  <li><a href="../pages/home2.html">Home Page 2</a></li>
+                </ul>
+              </li>
+              <li><a href="../pages/menu.html">Menu</a></li>
+              <li><a href="../pages/about.html">About</a></li>
+              <li><a href="../pages/blog.html">Blog</a></li>
+              <li><a href="../pages/schedule.html">Truck Schedule</a></li>
+              <li><a href="../pages/catering.html">Catering</a></li>
+              
+              <li><a href="../pages/contact.html">Book Our Truck</a></li>
+            </ul>
+          </nav>
+
+          <!-- Actions -->
+          <div class="nav-actions">
+            <button id="themeToggle" class="icon-btn">
+              <i class="fa-solid fa-sun"></i>
+            </button>
+            <button id="rtlToggle" class="icon-btn">
+              <i class="fa-solid fa-language"></i>
+            </button>
+            <a href="login.html" class="btn-login">Login</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="schedule-hero">
+      <div class="schedule-overlay"></div>
+
+      <div class="container">
+        <div class="schedule-hero-content">
+          <h1>Find Our Food Truck</h1>
+
+          <p>
+            Check our weekly schedule to discover where our food truck will be
+            serving fresh street food near you.
+          </p>
+
+          <div class="menu-breadcrumb">
+            <a href="index.html"> <i class="fa-solid fa-house"></i> Home </a>
+
+            <span class="breadcrumb-separator">
+              <i class="fa-solid fa-angle-right"></i>
+            </span>
+
+            <span class="breadcrumb-current"> Truck Schedule </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="truck-schedule today">
+      <div class="container">
+        <div class="section-title">
+          <h2>Weekly Truck Schedule</h2>
+          <p>
+            Find where our food truck will be serving delicious street food this
+            week.
+          </p>
+        </div>
+
+        <div class="schedule-timeline">
+          <!-- Monday -->
+
+          <div class="timeline-item">
+            <div class="timeline-day">Mon</div>
+
+            <div class="timeline-content">
+              <h3><i class="fa-solid fa-location-dot"></i> Downtown Plaza</h3>
+
+              <span class="timeline-time">
+                <i class="fa-regular fa-clock"></i> 12:00 PM - 3:00 PM
+              </span>
+
+              <p>
+                Serving lunch specials and our signature burgers near the
+                central plaza.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tuesday -->
+
+          <div class="timeline-item today">
+            <div class="timeline-day">Tue</div>
+
+            <div class="timeline-content">
+              <h3><i class="fa-solid fa-location-dot"></i> City Park</h3>
+
+              <span class="timeline-time">
+                <i class="fa-regular fa-clock"></i> 1:00 PM - 5:00 PM
+              </span>
+
+              <p>
+                Enjoy tacos and refreshing drinks while relaxing at the park.
+              </p>
+            </div>
+          </div>
+
+          <!-- Wednesday -->
+
+          <div class="timeline-item">
+            <div class="timeline-day">Wed</div>
+
+            <div class="timeline-content">
+              <h3><i class="fa-solid fa-location-dot"></i> Riverside Market</h3>
+
+              <span class="timeline-time">
+                <i class="fa-regular fa-clock"></i> 12:00 PM - 4:00 PM
+              </span>
+
+              <p>
+                Street food favorites served at the weekly riverside market.
+              </p>
+            </div>
+          </div>
+
+          <!-- Thursday -->
+
+          <div class="timeline-item">
+            <div class="timeline-day">Thu</div>
+
+            <div class="timeline-content">
+              <h3><i class="fa-solid fa-location-dot"></i> Tech District</h3>
+
+              <span class="timeline-time">
+                <i class="fa-regular fa-clock"></i> 11:30 AM - 3:00 PM
+              </span>
+
+              <p>Grab quick lunch specials during your workday break.</p>
+            </div>
+          </div>
+
+          <!-- Friday -->
+
+          <div class="timeline-item">
+            <div class="timeline-day">Fri</div>
+
+            <div class="timeline-content">
+              <h3>
+                <i class="fa-solid fa-location-dot"></i> Night Food Market
+              </h3>
+
+              <span class="timeline-time">
+                <i class="fa-regular fa-clock"></i> 6:00 PM - 10:00 PM
+              </span>
+
+              <p>
+                Join the evening street food festival with live music and
+                amazing dishes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="events-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Upcoming Food Truck Events</h2>
+          <p>
+            Join us at these exciting events and enjoy our delicious street
+            food.
+          </p>
+        </div>
+
+        <div class="events-grid">
+          <!-- Event 1 -->
+
+          <div class="event-card">
+            <div class="event-image">
+              <img src="../assets/images/event1.jpg" alt="Food Festival" />
+
+              <span class="event-date">Aug 12</span>
+            </div>
+
+            <div class="event-content">
+              <h3>Street Food Festival</h3>
+
+              <div class="event-info">
+                <span
+                  ><i class="fa-solid fa-location-dot"></i> Downtown
+                  Square</span
+                >
+
+                <span
+                  ><i class="fa-regular fa-clock"></i> 5:00 PM - 10:00 PM</span
+                >
+              </div>
+
+              <p>
+                A vibrant street food festival featuring live music, local
+                vendors, and our signature burgers and tacos.
+              </p>
+            </div>
+          </div>
+
+          <!-- Event 2 -->
+
+          <div class="event-card">
+            <div class="event-image">
+              <img src="../assets/images/event2.jpg" alt="Night Market" />
+
+              <span class="event-date">Aug 18</span>
+            </div>
+
+            <div class="event-content">
+              <h3>City Night Market</h3>
+
+              <div class="event-info">
+                <span
+                  ><i class="fa-solid fa-location-dot"></i> Riverside Park</span
+                >
+
+                <span
+                  ><i class="fa-regular fa-clock"></i> 6:00 PM - 11:00 PM</span
+                >
+              </div>
+
+              <p>
+                Enjoy delicious street food, artisan stalls, and live
+                entertainment under the city lights.
+              </p>
+            </div>
+          </div>
+
+          <!-- Event 3 -->
+
+          <div class="event-card">
+            <div class="event-image">
+              <img src="../assets/images/event3.jpg" alt="Music Festival" />
+
+              <span class="event-date">Aug 25</span>
+            </div>
+
+            <div class="event-content">
+              <h3>Summer Music Festival</h3>
+
+              <div class="event-info">
+                <span
+                  ><i class="fa-solid fa-location-dot"></i> Central Park</span
+                >
+
+                <span
+                  ><i class="fa-regular fa-clock"></i> 4:00 PM - 9:00 PM</span
+                >
+              </div>
+
+              <p>
+                Join us for great music and delicious food truck favorites at
+                the city's biggest summer festival.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="truck-booking-cta">
+      <div class="cta-overlay"></div>
+
+      <div class="container">
+        <div class="booking-cta-content">
+          <h2>Book Our Food Truck for Your Next Event</h2>
+
+          <p>
+            From private parties to corporate events and festivals, our food
+            truck brings delicious street food and unforgettable experiences.
+          </p>
+
+          <div class="cta-buttons">
+            <a href="book.html" class="cta-btn primary-btn"> Book Our Truck </a>
+
+            <a href="menu.html" class="cta-btn secondary-btn"> Explore Menu </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <!--  Logo + Text -->
+          <!-- Logo + Text + Newsletter -->
+          <div class="footer-col">
+            <div class="logo">
+              <a href="../pages/index.html">
+                <span class="logo-icon">
+                  <i class="fa-solid fa-truck-fast"></i>
+                </span>
+
+                <span class="logo-text-fot"> StreetBite </span>
+              </a>
+            </div>
+
+            <p>
+              Stackly provides modern digital solutions designed to help
+              businesses grow and succeed in the online world.
+            </p>
+
+            <!-- Newsletter -->
+            <div class="footer-newsletter">
+              <h3>Subscribe</h3>
+              <form>
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!--  Menu Items -->
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="index.html">Home Page-1</a>
+              </li>
+               <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="home2.html">Home Page-2</a>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="menu.html">Menu</a>
+              </li>
+              
+                <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="about.html">About</a>
+              </li>
+                 <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="schedule.html">Truck Schedule</a>
+              </li>
+             
+              
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="contact.html">Book Our Truck</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--  Additional Pages -->
+          <div class="footer-col">
+            <h3>Additional Pages</h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="blog.html">Blog</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="blogdetails.html">Blog-Details</a>
+              </li>
+               <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="catering.html">Catering</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="login.html">Login</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="register.html">Register</a>
+              </li>
+             
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="contact.html">Support</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--  Contact + Social -->
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+
+            <div class="footer-contact">
+              <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+              <p><i class="fa-solid fa-envelope"></i> info@stackly.com</p>
+              <p><i class="fa-solid fa-location-dot"></i> Hyderabad, India</p>
+            </div>
+
+            <h3 class="social-heading">Follow Us</h3>
+
+            <div class="footer-social">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+          <p>© 2026 Stackly. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

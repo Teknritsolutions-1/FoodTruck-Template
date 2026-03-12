@@ -1,0 +1,264 @@
+/* ======================================
+GLOBAL RTL SUPPORT
+====================================== */
+
+html[dir="rtl"] body{
+direction: rtl;
+text-align: right;
+}
+
+/* ======================================
+HEADER / NAVIGATION
+====================================== */
+
+html[dir="rtl"] .header{
+flex-direction: row-reverse;
+}
+
+/* html[dir="rtl"] .nav-wrapper{
+flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .nav-menu > ul{
+flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .nav-actions{
+flex-direction: row-reverse;
+} */
+
+html[dir="rtl"] .logo a{
+flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .menu-close{
+right:auto;
+left:25px;
+}
+
+html[dir="rtl"] .nav-menu{
+left:auto;
+right:0;
+transform:translateX(100%);
+}
+
+html[dir="rtl"] .nav-menu.active{
+transform:translateX(0);
+}
+
+/* ======================================
+DROPDOWN
+====================================== */
+
+html[dir="rtl"] .dropdown-menu{
+left:auto;
+right:0;
+text-align:right;
+}
+
+html[dir="rtl"] .arrow{
+margin-left:0;
+margin-right:6px;
+}
+
+html[dir="rtl"] .nav-menu > ul > li > a::after{
+left:auto;
+right:0;
+}
+
+/* ======================================
+BUTTONS / ICONS
+====================================== */
+
+html[dir="rtl"] .icon-btn i{
+transform: scaleX(-1);
+}
+
+html[dir="rtl"] .cta-buttons,
+html[dir="rtl"] .hero-buttons,
+html[dir="rtl"] .about-cta-buttons{
+flex-direction:row-reverse;
+}
+
+/* ======================================
+TEXT ALIGNMENT
+====================================== */
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] p,
+html[dir="rtl"] a,
+html[dir="rtl"] li,
+html[dir="rtl"] span,
+html[dir="rtl"] button{
+text-align:right;
+}
+
+/* ======================================
+HERO
+====================================== */
+
+html[dir="rtl"] .hero-section > .hero-container{
+direction:rtl;
+}
+
+html[dir="rtl"] .hero-premium-wrapper{
+flex-direction:row-reverse;
+}
+
+/* ======================================
+ABOUT PAGE
+====================================== */
+
+html[dir="rtl"] .about-wrapper{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .story-wrapper{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .about-hero-content{
+text-align:center;
+}
+
+html[dir="rtl"] .experience-box{
+left:auto;
+right:30px;
+}
+
+/* ======================================
+GALLERY
+====================================== */
+
+html[dir="rtl"] .gallery-heading{
+text-align:center;
+}
+
+/* ======================================
+MENU PAGE
+====================================== */
+
+html[dir="rtl"] .menu-hero-content{
+direction:rtl;
+}
+
+html[dir="rtl"] .menu-category-filters{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .menu-price{
+left:auto;
+right:15px;
+}
+
+/* ======================================
+TESTIMONIALS
+====================================== */
+
+html[dir="rtl"] .testimonialSwiper{
+direction:rtl;
+}
+
+html[dir="rtl"] .testimonial-top{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .testimonial-card{
+text-align:right;
+}
+
+/* ======================================
+TIMELINE / SCHEDULE
+====================================== */
+
+html[dir="rtl"] .timeline-wrapper::before{
+left:auto;
+right:30px;
+}
+
+html[dir="rtl"] .timeline-item{
+padding-left:0;
+padding-right:80px;
+}
+
+html[dir="rtl"] .timeline-icon{
+left:auto;
+right:15px;
+}
+
+html[dir="rtl"] .timeline-content{
+margin-left:0;
+margin-right:25px;
+}
+
+html[dir="rtl"] .timeline-item:hover .timeline-content{
+transform:translateX(-8px);
+}
+
+html[dir="rtl"] .schedule-timeline::before{
+right:50%;
+left:auto;
+}
+
+html[dir="rtl"] .schedule-hero-content{
+text-align:center;
+}
+
+/* ======================================
+EVENTS
+====================================== */
+
+html[dir="rtl"] .event-content{
+text-align:right;
+}
+
+html[dir="rtl"] .event-date{
+left:auto;
+right:15px;
+}
+
+/* ======================================
+BOOKING PAGE
+====================================== */
+
+html[dir="rtl"] .booking-hero-content{
+text-align:center;
+}
+
+html[dir="rtl"] .booking-wrapper{
+direction:rtl;
+}
+
+html[dir="rtl"] .form-group label{
+left:auto;
+right:14px;
+}
+
+html[dir="rtl"] .popup-content{
+text-align:center;
+}
+
+/* ======================================
+TEAM / WHY / GRIDS
+====================================== */
+
+html[dir="rtl"] .why-grid,
+html[dir="rtl"] .team-grid,
+html[dir="rtl"] .event-types-grid{
+direction:rtl;
+}
+
+/* ======================================
+FOOTER
+====================================== */
+
+html[dir="rtl"] .footer-contact p{
+direction:rtl;
+}
+
+html[dir="rtl"] .footer-social{
+flex-direction:row-reverse;
+}

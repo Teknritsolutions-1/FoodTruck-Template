@@ -1,0 +1,710 @@
+
+
+
+body.dark-mode {
+  background-color: #000;
+  color: #f1f5f9;
+}
+
+body.dark-mode p {
+  color: #cbd5e1;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #ffffff;
+}
+
+
+body.dark-mode .header {
+  background: #000;
+}
+
+
+
+body.dark-mode .dropdown-menu li a:hover {
+  background-color: #334155;
+  color: var(--primary-color);
+}
+
+body.dark-mode .nav-menu a.active {
+  background: #374151;
+  color: var(--primary-color);
+}
+
+body.dark-mode .icon-btn i {
+  color: #e5e7eb;
+}
+/* MOBILE MENU DARK MODE */
+
+body.dark-mode .nav-menu{
+  background:#000;
+}
+
+body.dark-mode .nav-menu a{
+  color:#e5e7eb;
+}
+
+body.dark-mode .nav-menu a:hover{
+  color:var(--primary-color);
+}
+
+body.dark-mode .dropdown-menu{
+  background:#000;
+}
+body.dark-mode .logo-text{
+color:#fff;
+}
+/* =========================
+   DARK MODE - POPULAR DISHES
+========================= */
+
+body.dark-mode .popular-dishes {
+  background: #020617;
+}
+
+body.dark-mode .section-heading > p {
+  color: #94a3b8;
+}
+
+body.dark-mode .dish-card {
+  background: #1e293b;
+}
+
+body.dark-mode .dish-card > h4 {
+  color: #f1f5f9;
+}
+
+body.dark-mode .dish-feature > .dish-content {
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+}
+/* =========================
+   DARK MODE - POPULAR DISHES
+========================= */
+
+body.dark-mode .popular-dishes {
+  background: #020617;
+}
+
+body.dark-mode .section-heading > p {
+  color: #94a3b8;
+}
+
+body.dark-mode .dish-card {
+  background: #1e293b;
+}
+
+body.dark-mode .dish-card > h4 {
+  color: #f1f5f9;
+}
+
+body.dark-mode .dish-feature > .dish-content {
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+}
+/* =========================
+   DARK MODE - TRUCK SCHEDULE
+========================= */
+
+body.dark-mode .truck-schedule {
+  background: #000;
+}
+
+body.dark-mode .schedule-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+}
+
+body.dark-mode .schedule-card > h3 {
+  color: #f1f5f9;
+}
+
+body.dark-mode .schedule-card > .location,
+body.dark-mode .schedule-card > .time {
+  color: #cbd5e1;
+}
+
+body.dark-mode .schedule-card:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+body.dark-mode .schedule-card:hover {
+  background: var(--primary-color);
+}
+body.dark-mode .about-truck{
+  background:#020617;
+}
+
+body.dark-mode .about-content > h3{
+  color:#f1f5f9;
+}
+
+body.dark-mode .about-content > p{
+  color:#cbd5e1;
+}
+
+body.dark-mode .about-img-small img{
+  border:6px solid #020617;
+}
+/* =========================
+   DARK MODE - CATERING
+========================= */
+
+body.dark-mode .truck-catering{
+  background:#000;
+}
+
+body.dark-mode .catering-card{
+  background:#1e293b;
+}
+
+body.dark-mode .catering-card h3{
+  color:#f1f5f9;
+}
+
+body.dark-mode .catering-card p{
+  color:#cbd5e1;
+}
+
+body.dark-mode .catering-cta h3{
+  color:#ffffff;
+}
+body.dark-mode .truck-catering h2,
+body.dark-mode .truck-catering h3,
+body.dark-mode .truck-catering p{
+  color:#fff;
+}
+
+/* ======================
+   DARK MODE
+====================== */
+
+body.dark-mode .testimonials{
+  background:#020617;
+}
+
+body.dark-mode .testimonial-card{
+  background:#1e293b;
+  box-shadow:0 12px 35px rgba(0,0,0,0.6);
+}
+
+body.dark-mode .testimonial-card p{
+  color:#cbd5e1;
+}
+
+body.dark-mode .testimonial-top span{
+  color:#94a3b8;
+}
+
+body.dark-mode .testimonial-top h4{
+  color:#f1f5f9;
+}
+
+body.dark-mode .swiper-pagination-bullet{
+  background:#475569;
+}
+
+body.dark-mode .swiper-pagination-bullet-active{
+  background:var(--primary-color);
+}
+body.dark-mode .cta-book-truck{
+  background:url('../images/foodtruck-event.jpg') center/cover no-repeat;
+  background-attachment:fixed;
+}
+
+body.dark-mode .cta-overlay{
+  background:rgba(0,0,0,0.75);
+}
+body.dark-mode .hero-premium{
+  background:#020617;
+}
+
+body.dark-mode .hero-premium-content p{
+  color:#cbd5e1;
+}
+
+body.dark-mode .hero-tag{
+  background:#1e293b;
+}
+body.dark-mode .about-truck{
+  background:#020617;
+}
+
+body.dark-mode .about-content p{
+  color:#cbd5e1;
+}
+
+body.dark-mode .about-tag{
+  background:#1e293b;
+}
+body.dark-mode .food-gallery{
+  background:#020617;
+}
+
+body.dark-mode .gallery-heading p{
+  color:#cbd5e1;
+}
+body.dark-mode .popular-dishes{
+  background:#020617;
+}
+
+body.dark-mode .dish-card{
+  background:#1e293b;
+}
+
+body.dark-mode .dish-info p{
+  color:#cbd5e1;
+}
+/* =========================
+   TIMELINE DARK MODE
+========================= */
+
+body.dark-mode .truck-timeline{
+  background:linear-gradient(
+    180deg,
+    #020617,
+    #0f172a
+  );
+}
+body.dark-mode .hero-premium::after{
+background:rgba(0,0,0,0.7);
+}
+
+body.dark-mode .timeline-content{
+  background:#1e293b;
+}
+
+body.dark-mode .timeline-content p{
+  color:#cbd5e1;
+}
+
+body.dark-mode .timeline-bg-truck{
+  opacity:0.12;
+}
+
+body.dark-mode .truck-timeline::before,
+body.dark-mode .truck-timeline::after{
+  background:rgba(248,76,7,0.12);
+}
+body.dark-mode .instagram-feed{
+  background:#020617;
+}
+
+body.dark-mode .instagram-heading p{
+  color:#cbd5e1;
+}
+body.dark-mode .cta-overlay{
+  background:rgba(0,0,0,0.75);
+}
+body.dark-mode .menu-hero-overlay{
+  background:rgba(0,0,0,0.75);
+}
+body.dark-mode .menu-card{
+background:#1e293b;
+}
+
+body.dark-mode .menu-content p{
+color:#cbd5e1;
+}
+body.dark-mode .menu-filter{
+  background:#1e293b;
+  color:#e5e7eb;
+}
+
+body.dark-mode .menu-filter.active{
+  background:var(--primary-color);
+}
+body.dark-mode .featured-dish{
+background:#000;
+}
+
+body.dark-mode .featured-content p{
+color:#cbd5e1;
+}
+body.dark-mode .about-overlay{
+background:rgba(0,0,0,0.75);
+}
+body.dark-mode .our-story-section{
+background:#000;
+}
+
+body.dark-mode .story-content p{
+color:#cbd5e1;
+}
+
+body.dark-mode .story-stat{
+background:#1e293b;
+}
+
+body.dark-mode .story-stat span{
+color:#cbd5e1;
+}
+body.dark-mode .why-choose-section{
+background:#000;
+}
+
+body.dark-mode .why-card{
+background:#1e293b;
+}
+
+body.dark-mode .why-card p{
+color:#cbd5e1;
+}
+body.dark-mode .team-section{
+background:#000;
+}
+
+body.dark-mode .team-card{
+background:#1e293b;
+}
+
+body.dark-mode .team-info span{
+color:#cbd5e1;
+}
+body.dark-mode .cta-overlay{
+background:rgba(0,0,0,0.8);
+}
+body.dark-mode .schedule-overlay{
+background:rgba(0,0,0,0.75);
+}
+body.dark-mode .truck-schedule{
+background:#000;
+}
+
+body.dark-mode .truck-schedule::before{
+background-image:linear-gradient(
+45deg,
+rgba(255,255,255,0.05) 25%,
+transparent 25%,
+transparent 50%,
+rgba(255,255,255,0.05) 50%,
+rgba(255,255,255,0.05) 75%,
+transparent 75%
+);
+}
+body.dark-mode .truck-schedule{
+background:#000;
+}
+
+body.dark-mode .timeline-content{
+background:#1e293b;
+}
+
+body.dark-mode .timeline-content p{
+color:#cbd5e1;
+}
+/* today schedule card */
+
+body.dark-mode .timeline-item.today .timeline-content{
+background:#1e293b;
+border-left:4px solid var(--primary-color);
+box-shadow:0 20px 45px rgba(0,0,0,0.5);
+}
+.events-grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+/* today badge */
+
+body.dark-mode .timeline-item.today .timeline-day{
+background:var(--primary-color);
+color:#fff;
+}
+body.dark-mode .events-section{
+background:#000;
+}
+
+body.dark-mode .event-card{
+background:#1e293b;
+}
+
+body.dark-mode .event-content p{
+color:#cbd5e1;
+}
+body.dark-mode .cta-overlay{
+background:rgba(0,0,0,0.8);
+}
+body.dark-mode .booking-overlay{
+background:rgba(0,0,0,0.75);
+}
+body.dark-mode .event-types-section{
+background:#000;
+}
+
+body.dark-mode .event-type-card{
+background:#1e293b;
+}
+
+body.dark-mode .event-type-card p{
+color:#cbd5e1;
+}
+body.dark-mode .popup-content{
+background:#1e293b;
+color:#fff;
+}
+
+body.dark-mode .popup-content p{
+color:#cbd5e1;
+}
+body.dark-mode .booking-form-section{
+background:#000;
+}
+
+body.dark-mode .booking-form{
+background:#1e293b;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea,
+body.dark-mode .form-group select{
+background:#000;
+color:#fff;
+border-color:#334155;
+}
+
+body.dark-mode .form-group label{
+background:#1e293b;
+}
+body.dark-mode .catering-tab-section{
+background:#000;
+}
+
+body.dark-mode .catering-tab-card{
+background:#1e293b;
+}
+
+body.dark-mode .catering-tab-item{
+border-color:#334155;
+}
+
+body.dark-mode .catering-tab-item p{
+color:#cbd5e1;
+}
+
+body.dark-mode .catering-tab-item h3{
+color:#fff;
+}
+/* =========================
+   DARK MODE - CATERING MENU
+========================= */
+
+body.dark-mode .catering-menu-section{
+background:#000;
+}
+
+body.dark-mode .catering-title{
+color:#fff;
+}
+
+body.dark-mode .catering-menu-card{
+background:#1e293b;
+box-shadow:0 20px 60px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .menu-item{
+border-color:#334155;
+}
+
+body.dark-mode .menu-item h3{
+color:#f1f5f9;
+}
+
+body.dark-mode .menu-item p{
+color:#cbd5e1;
+}
+
+/* =========================
+   DARK MODE - CATERING TABS
+========================= */
+
+body.dark-mode .catering-tab-buttons label{
+background:#334155;
+color:#e2e8f0;
+border:1px solid #475569;
+}
+
+/* active tab */
+
+body.dark-mode #lunch-tab:checked ~ .catering-tab-buttons label[for="lunch-tab"],
+body.dark-mode #dinner-tab:checked ~ .catering-tab-buttons label[for="dinner-tab"]{
+background:var(--primary-color);
+color:#fff;
+border-color:var(--primary-color);
+}
+
+/* hover */
+
+body.dark-mode .catering-tab-buttons label:hover{
+background:#475569;
+}
+/* =========================
+   DARK MODE - CATERING PACKAGES
+========================= */
+
+body.dark-mode .catering-packages-premium{
+background:#000;
+}
+
+/* section title */
+
+body.dark-mode .packages-header h2{
+color:#f1f5f9;
+}
+
+body.dark-mode .packages-header p{
+color:#cbd5e1;
+}
+
+/* package card */
+
+body.dark-mode .package-box{
+background:#1e293b;
+box-shadow:0 20px 60px rgba(0,0,0,0.6);
+}
+
+/* hover */
+
+body.dark-mode .package-box:hover{
+box-shadow:0 30px 80px rgba(0,0,0,0.8);
+}
+
+/* text */
+
+body.dark-mode .package-box h3{
+color:#f1f5f9;
+}
+
+body.dark-mode .package-list li{
+color:#cbd5e1;
+}
+
+/* icons between menu items */
+
+body.dark-mode .package-list .icon{
+color:var(--primary-color);
+}
+
+/* price */
+
+body.dark-mode .price span{
+color:#94a3b8;
+}
+
+/* button */
+
+body.dark-mode .package-btn{
+background:var(--primary-color);
+color:#fff;
+}
+
+/* featured card */
+
+body.dark-mode .package-box.featured{
+border:2px solid var(--primary-color);
+}
+
+/* popular badge */
+
+body.dark-mode .popular-badge{
+background:var(--primary-color);
+color:#fff;
+}
+/* ===============================
+   DARK MODE - BLOG SECTION
+================================ */
+
+body.dark-mode .blog-premium-section{
+background:#000;
+}
+
+/* featured */
+
+body.dark-mode .blog-featured-content h2{
+color:#f1f5f9;
+}
+
+body.dark-mode .blog-featured-content p{
+color:#cbd5e1;
+}
+
+/* filters */
+
+body.dark-mode .blog-filter{
+background:#334155;
+color:#e2e8f0;
+border:1px solid #475569;
+}
+
+body.dark-mode .blog-filter.active{
+background:var(--primary-color);
+color:#fff;
+}
+
+/* blog cards */
+
+body.dark-mode .blog-card{
+background:#1e293b;
+box-shadow:0 15px 40px rgba(0,0,0,0.6);
+}
+
+body.dark-mode .blog-card:hover{
+box-shadow:0 25px 70px rgba(0,0,0,0.8);
+}
+
+/* text */
+
+body.dark-mode .blog-content h3{
+color:#f1f5f9;
+}
+
+body.dark-mode .blog-content p{
+color:#cbd5e1;
+}
+
+/* read more */
+
+body.dark-mode .blog-btn{
+color:var(--primary-color);
+}
+
+/* category badge */
+
+body.dark-mode .blog-tag{
+background:var(--primary-color);
+color:#fff;
+}
+
+/* featured category */
+
+body.dark-mode .blog-category{
+background:var(--primary-color);
+}
+body.dark-mode .login-card{
+background:#111;
+color:#fff;
+}
+
+body.dark-mode .login-group input{
+background:#000;
+border-color:#444;
+color:#fff;
+}
+
+body.dark-mode .login-group label{
+background:#000;
+color:#bbb;
+}
+body.dark-mode .register-card{
+background:#111;
+color:#fff;
+}
+
+body.dark-mode .register-group input{
+background:#000;
+border-color:#444;
+color:#fff;
+}
+
+body.dark-mode .register-group label{
+background:#000;
+color:#bbb;
+}

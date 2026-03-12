@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Food Truck</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+NZ+Basic+Guides&family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="../pages/index.html">
+              <span class="logo-icon">
+                <i class="fa-solid fa-truck-fast"></i>
+              </span>
+
+              <span class="logo-text"> StreetBite </span>
+            </a>
+          </div>
+
+          <!-- Hamburger -->
+          <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+
+          <!-- Navigation -->
+          <nav class="nav-menu">
+            <ul>
+              <li class="dropdown">
+                <a href="index.html"
+                  >Home
+                  <span class="arrow"
+                    ><i class="fa-solid fa-chevron-down"></i></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../pages/index.html">Home Page 1</a></li>
+                  <li><a href="../pages/home2.html">Home Page 2</a></li>
+                </ul>
+              </li>
+              <li><a href="../pages/menu.html">Menu</a></li>
+              <li><a href="../pages/about.html">About</a></li>
+              <li><a href="../pages/blog.html">Blog</a></li>
+              <li><a href="../pages/schedule.html">Truck Schedule</a></li>
+              <li><a href="../pages/catering.html">Catering</a></li>
+
+              <li><a href="../pages/contact.html">Book Our Truck</a></li>
+            </ul>
+          </nav>
+
+          <!-- Actions -->
+          <div class="nav-actions">
+            <button id="themeToggle" class="icon-btn">
+              <i class="fa-solid fa-sun"></i>
+            </button>
+            <button id="rtlToggle" class="icon-btn">
+              <i class="fa-solid fa-language"></i>
+            </button>
+            <a href="login.html" class="btn-login">Login</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="catering-hero">
+      <div class="swiper cateringHeroSwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+
+          <div class="swiper-slide hero-slide">
+            <img src="../assets/images/catering1.jpg" alt="" />
+          </div>
+
+          <!-- Slide 2 -->
+
+          <div class="swiper-slide hero-slide">
+            <img src="../assets/images/catering2.jpg" alt="" />
+          </div>
+
+          <!-- Slide 3 -->
+
+          <div class="swiper-slide hero-slide">
+            <img src="../assets/images/catering3.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="container">
+        <div class="catering-hero-content">
+          <h1>Food Truck Catering</h1>
+
+          <p>
+            Bring bold street food flavors to your next event with our premium
+            catering experience.
+          </p>
+
+          <div class="menu-breadcrumb">
+            <a href="index.html"> <i class="fa-solid fa-house"></i> Home </a>
+
+            <span class="breadcrumb-separator">
+              <i class="fa-solid fa-angle-right"></i>
+            </span>
+
+            <span class="breadcrumb-current"> Catering </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="catering-menu-section">
+      <div class="container">
+        <h2 class="catering-title">Catering Menu</h2>
+
+        <input type="radio" name="menu-tab" id="lunch-tab" checked />
+        <input type="radio" name="menu-tab" id="dinner-tab" />
+
+        <div class="catering-tab-buttons">
+          <label for="lunch-tab">Lunch Menu</label>
+          <label for="dinner-tab">Dinner Menu</label>
+        </div>
+
+        <div class="catering-menu-card">
+          <!-- LUNCH MENU -->
+
+          <div class="catering-menu-content lunch">
+            <div class="menu-item">
+              <h3>Grilled Chicken Burger</h3>
+              <p>Juicy grilled chicken with lettuce and signature sauce.</p>
+            </div>
+
+            <div class="menu-item">
+              <h3>Street Tacos</h3>
+              <p>
+                Soft tortillas filled with seasoned chicken and fresh salsa.
+              </p>
+            </div>
+
+            <div class="menu-item">
+              <h3>Loaded Fries</h3>
+              <p>Crispy fries topped with cheese and spicy sauce.</p>
+            </div>
+          </div>
+
+          <!-- DINNER MENU -->
+
+          <div class="catering-menu-content dinner">
+            <div class="menu-item">
+              <h3>BBQ Beef Burger</h3>
+              <p>Grilled beef patty with smoky BBQ sauce.</p>
+            </div>
+
+            <div class="menu-item">
+              <h3>Chicken Quesadilla</h3>
+              <p>Grilled tortilla filled with chicken and melted cheese.</p>
+            </div>
+
+            <div class="menu-item">
+              <h3>Signature Nachos</h3>
+              <p>Crunchy nachos topped with cheese and salsa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="catering-packages-premium">
+      <div class="container">
+        <div class="packages-header">
+          <h2>Catering Packages</h2>
+          <p>Choose the perfect catering experience for your event.</p>
+        </div>
+
+        <div class="packages-wrapper">
+          <!-- STARTER -->
+
+          <div class="package-box">
+            <h3>Starter</h3>
+
+            <div class="price">$15 <span>/ person</span></div>
+
+            <ul class="package-list">
+              <li>Burger Sliders</li>
+              <li class="icon"><i class="fa-solid fa-utensils"></i></li>
+
+              <li>Street Tacos</li>
+              <li class="icon"><i class="fa-solid fa-utensils"></i></li>
+
+              <li>Loaded Fries</li>
+              <li class="icon"><i class="fa-solid fa-utensils"></i></li>
+
+              <li>Soft Drinks</li>
+            </ul>
+
+            <button class="package-btn">Choose Package</button>
+          </div>
+
+          <!-- PREMIUM -->
+
+          <div class="package-box featured">
+            <div class="popular-badge">Most Popular</div>
+
+            <h3>Premium</h3>
+
+            <div class="price">$25 <span>/ person</span></div>
+
+            <ul class="package-list">
+              <li>Signature Burgers</li>
+              <li class="icon"><i class="fa-solid fa-utensils"></i></li>
+
+              <li>Chicken Tacos</li>
+              <li class="icon"><i class="fa-solid fa-utensils"></i></li>
+
+              <li>Loaded Nachos</li>
+              <li class="icon"><i class="fa-solid fa-utensils"></i></li>
+
+              <li>Fresh Lemonade</li>
+              <li class="icon"><i class="fa-solid fa-utensils"></i></li>
+
+              <li>Dessert Bites</li>
+            </ul>
+
+            <button class="package-btn">Choose Package</button>
+          </div>
+
+          <!-- LUXURY -->
+
+          <div class="package-box">
+            <h3>Luxury</h3>
+
+            <div class="price">$40 <span>/ person</span></div>
+
+            <ul class="package-list">
+              <li>Gourmet Burgers</li>
+              <li class="icon"><i class="fa-solid fa-utensils"></i></li>
+
+              <li>Steak Tacos</li>
+              <li class="icon"><i class="fa-solid fa-utensils"></i></li>
+
+              <li>Loaded Fries</li>
+              <li class="icon"><i class="fa-solid fa-utensils"></i></li>
+
+              <li>Craft Drinks</li>
+              <li class="icon"><i class="fa-solid fa-utensils"></i></li>
+
+              <li>Dessert Platter</li>
+            </ul>
+
+            <button class="package-btn">Choose Package</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <!--  Logo + Text -->
+          <!-- Logo + Text + Newsletter -->
+          <div class="footer-col">
+            <div class="logo">
+              <a href="../pages/index.html">
+                <span class="logo-icon">
+                  <i class="fa-solid fa-truck-fast"></i>
+                </span>
+
+                <span class="logo-text-fot"> StreetBite </span>
+              </a>
+            </div>
+
+            <p>
+              Stackly provides modern digital solutions designed to help
+              businesses grow and succeed in the online world.
+            </p>
+
+            <!-- Newsletter -->
+            <div class="footer-newsletter">
+              <h3>Subscribe</h3>
+              <form>
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!--  Menu Items -->
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="index.html">Home Page-1</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="home2.html">Home Page-2</a>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="menu.html">Menu</a>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="about.html">About</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="schedule.html">Truck Schedule</a>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="contact.html">Book Our Truck</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--  Additional Pages -->
+          <div class="footer-col">
+            <h3>Additional Pages</h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="blog.html">Blog</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="blogdetails.html">Blog-Details</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="catering.html">Catering</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="login.html">Login</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="register.html">Register</a>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="contact.html">Support</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--  Contact + Social -->
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+
+            <div class="footer-contact">
+              <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+              <p><i class="fa-solid fa-envelope"></i> info@stackly.com</p>
+              <p><i class="fa-solid fa-location-dot"></i> Hyderabad, India</p>
+            </div>
+
+            <h3 class="social-heading">Follow Us</h3>
+
+            <div class="footer-social">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+          <p>© 2026 Stackly. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

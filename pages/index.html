@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Food Truck</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+NZ+Basic+Guides&family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="../pages/index.html">
+              <span class="logo-icon">
+                <i class="fa-solid fa-truck-fast"></i>
+              </span>
+
+              <span class="logo-text"> StreetBite </span>
+            </a>
+          </div>
+
+          <!-- Hamburger -->
+          <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+
+          <!-- Navigation -->
+          <nav class="nav-menu">
+            <div class="menu-close">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul>
+              <li class="dropdown">
+                <a href="index.html"
+                  >Home
+                  <span class="arrow"
+                    ><i class="fa-solid fa-chevron-down"></i></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../pages/index.html">Home Page 1</a></li>
+                  <li><a href="../pages/home2.html">Home Page 2</a></li>
+                </ul>
+              </li>
+              <li><a href="../pages/menu.html">Menu</a></li>
+              <li><a href="../pages/about.html">About</a></li>
+              <li><a href="../pages/blog.html">Blog</a></li>
+              <li><a href="../pages/schedule.html">Truck Schedule</a></li>
+              <li><a href="../pages/catering.html">Catering</a></li>
+
+              <li><a href="../pages/contact.html">Book Our Truck</a></li>
+            </ul>
+          </nav>
+
+          <!-- Actions -->
+          <div class="nav-actions">
+            <button id="themeToggle" class="icon-btn">
+              <i class="fa-solid fa-sun"></i>
+            </button>
+            <button id="rtlToggle" class="icon-btn">
+              <i class="fa-solid fa-language"></i>
+            </button>
+            <a href="login.html" class="btn-login">Login</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="hero-premium">
+      <div class="container">
+        <div class="hero-premium-wrapper">
+          <!-- Left Content -->
+          <div class="hero-premium-content">
+            <span class="hero-tag">Fresh Street Food</span>
+
+            <h1>
+              Delicious Food <br />
+              From Our <span>Mobile Kitchen</span>
+            </h1>
+
+            <p>
+              Experience handcrafted street food made with fresh ingredients and
+              bold flavors, served directly from our food truck.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="menu.html" class="btn-primary">View Menu</a>
+              <a href="schedule.html" class="btn-outline">Find Our Truck</a>
+            </div>
+          </div>
+
+          <!-- Right Image Area -->
+          <div class="hero-premium-images">
+            <img
+              src="../assets/images/food-1.jpg"
+              class="food-img food-img-1"
+              alt=""
+            />
+            <img
+              src="../assets/images/food-2.jpg"
+              class="food-img food-img-2"
+              alt=""
+            />
+            <img
+              src="../assets/images/food-3.jpg"
+              class="food-img food-img-3"
+              alt=""
+            />
+
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="popular-dishes">
+      <div class="container">
+        <!-- Section Heading -->
+        <div class="section-heading">
+          <h2>Popular Dishes</h2>
+          <p>
+            A selection of our most loved street favorites, freshly prepared and
+            served hot from the truck.
+          </p>
+        </div>
+
+        <!-- Dishes Layout -->
+        <div class="dishes-wrapper">
+          <!-- Featured Dish -->
+          <div class="dish-feature">
+            <img src="../assets/images/dish-1.jpg" alt="Chef Special Burger" />
+
+            <div class="dish-content">
+              <h3>Chef Special Burger</h3>
+              <p>
+                Juicy grilled beef patty with melted cheese, fresh lettuce,
+                tomatoes and our signature sauce.
+              </p>
+
+              <span class="dish-price">$12</span>
+            </div>
+          </div>
+
+          <!-- Dish Grid -->
+          <div class="dish-grid">
+            <div class="dish-card">
+              <img src="../assets/images/dish-2.jpg" alt="Street Tacos" />
+              <h4>Street Tacos</h4>
+              <span>$8</span>
+            </div>
+
+            <div class="dish-card">
+              <img src="../assets/images/dish-3.jpg" alt="Loaded Fries" />
+              <h4>Loaded Fries</h4>
+              <span>$7</span>
+            </div>
+
+            <div class="dish-card">
+              <img src="../assets/images/dish-4.jpg" alt="Chicken Wrap" />
+              <h4>Chicken Wrap</h4>
+              <span>$9</span>
+            </div>
+
+            <div class="dish-card">
+              <img src="../assets/images/dish-5.jpg" alt="BBQ Sandwich" />
+              <h4>BBQ Sandwich</h4>
+              <span>$10</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="menu-cta">
+          <a href="menu.html" class="btn-menu">View Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="truck-schedule">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Where to Find Us This Week</h2>
+          <p>
+            Check our weekly schedule and stop by to enjoy your favorite street
+            food.
+          </p>
+        </div>
+
+        <div class="schedule-grid">
+          <div class="schedule-card">
+            <h3>Monday</h3>
+            <p class="location">
+              <i class="fa-solid fa-location-dot"></i> Downtown Plaza
+            </p>
+            <p class="time">
+              <i class="fa-solid fa-clock"></i> 12:00 PM – 8:00 PM
+            </p>
+            <a href="#">View Map</a>
+          </div>
+
+          <div class="schedule-card">
+            <h3>Tuesday</h3>
+            <p class="location">
+              <i class="fa-solid fa-location-dot"></i> City Park
+            </p>
+            <p class="time">
+              <i class="fa-solid fa-clock"></i> 1:00 PM – 9:00 PM
+            </p>
+            <a href="#">View Map</a>
+          </div>
+
+          <div class="schedule-card">
+            <h3>Wednesday</h3>
+            <p class="location">
+              <i class="fa-solid fa-location-dot"></i> River Market
+            </p>
+            <p class="time">
+              <i class="fa-solid fa-clock"></i> 11:00 AM – 7:00 PM
+            </p>
+            <a href="#">View Map</a>
+          </div>
+
+          <div class="schedule-card">
+            <h3>Thursday</h3>
+            <p class="location">
+              <i class="fa-solid fa-location-dot"></i> Midtown Square
+            </p>
+            <p class="time">
+              <i class="fa-solid fa-clock"></i> 12:00 PM – 9:00 PM
+            </p>
+            <a href="#">View Map</a>
+          </div>
+
+          <div class="schedule-card">
+            <h3>Friday</h3>
+            <p class="location">
+              <i class="fa-solid fa-location-dot"></i> Night Market
+            </p>
+            <p class="time">
+              <i class="fa-solid fa-clock"></i> 5:00 PM – 11:00 PM
+            </p>
+            <a href="#">View Map</a>
+          </div>
+
+          <div class="schedule-card">
+            <h3>Saturday</h3>
+            <p class="location">
+              <i class="fa-solid fa-location-dot"></i> Food Festival
+            </p>
+            <p class="time">
+              <i class="fa-solid fa-clock"></i> 12:00 PM – 10:00 PM
+            </p>
+            <a href="#">View Map</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-truck">
+      <div class="container">
+        <!-- Section Heading -->
+        <div class="section-heading">
+          <h2>About Our Food Truck</h2>
+          <p>
+            Bringing handcrafted street food to the streets with fresh
+            ingredients, bold flavors, and a passion for great food experiences.
+          </p>
+        </div>
+
+        <div class="about-wrapper">
+          <!-- Image Side -->
+          <div class="about-images">
+            <div class="about-img-main">
+              <img src="../assets/images/truck-main.jpg" alt="Food Truck" />
+            </div>
+
+            <div class="about-img-small">
+              <img src="../assets/images/food-small.jpg" alt="Food Dish" />
+            </div>
+          </div>
+
+          <!-- Content Side -->
+          <div class="about-content">
+            <h3>Street Food With Passion</h3>
+
+            <p>
+              Our food truck was created to bring restaurant-quality street food
+              directly to the community. Every dish is crafted using fresh
+              ingredients and unique flavors that keep customers coming back.
+            </p>
+
+            <div class="about-features">
+              <div class="feature-item">
+                <i class="fa-solid fa-check"></i>
+                <span>Fresh Ingredients</span>
+              </div>
+
+              <div class="feature-item">
+                <i class="fa-solid fa-check"></i>
+                <span>Handcrafted Recipes</span>
+              </div>
+
+              <!-- <div class="feature-item">
+                <i class="fa-solid fa-check"></i>
+                <span>Locally Sourced Produce</span>
+              </div> -->
+
+              <div class="feature-item">
+                <i class="fa-solid fa-check"></i>
+                <span>Fast Street Service</span>
+              </div>
+            </div>
+
+            <a href="#" class="about-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="truck-catering">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Catering & Private Events</h2>
+          <p>
+            Bring the food truck experience to your next event. Perfect for
+            corporate gatherings, weddings, festivals, and private parties.
+          </p>
+        </div>
+
+        <div class="catering-grid">
+          <div class="catering-card">
+            <i class="fa-solid fa-champagne-glasses"></i>
+            <h3>Private Parties</h3>
+            <p>
+              Make your celebration unforgettable with fresh street food served
+              live.
+            </p>
+          </div>
+
+          <div class="catering-card">
+            <i class="fa-solid fa-briefcase"></i>
+            <h3>Corporate Events</h3>
+            <p>
+              Perfect catering solution for office events and company
+              gatherings.
+            </p>
+          </div>
+
+          <div class="catering-card">
+            <i class="fa-solid fa-heart"></i>
+            <h3>Weddings</h3>
+            <p>Serve something unique and delicious on your special day.</p>
+          </div>
+
+          <div class="catering-card">
+            <i class="fa-solid fa-music"></i>
+            <h3>Festivals</h3>
+            <p>
+              Our truck is ready to serve large crowds with amazing street
+              flavors.
+            </p>
+          </div>
+        </div>
+
+        <div class="catering-cta">
+          <h3>Book Our Food Truck For Your Next Event</h3>
+          <a href="contact.html" class="book-truck-btn">Book Our Truck</a>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-heading">
+          <h2>What Our Customers Say</h2>
+          <p>Real experiences from people who love our food truck.</p>
+        </div>
+
+        <div class="swiper testimonialSwiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-top">
+                  <img
+                    src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg"
+                    alt="customer"
+                  />
+                  <div>
+                    <h4>Sarah Williams</h4>
+                    <span>Food Blogger</span>
+                  </div>
+                </div>
+
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+
+                <p>
+                  The best street food I’ve ever tried. Everything was fresh,
+                  flavorful, and served with amazing hospitality.
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-top">
+                  <img
+                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
+                    alt="customer"
+                  />
+                  <div>
+                    <h4>David Miller</h4>
+                    <span>Local Customer</span>
+                  </div>
+                </div>
+
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+
+                <p>
+                  I stop by this truck every week. The tacos and loaded fries
+                  are absolutely incredible!
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-top">
+                  <img
+                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg"
+                    alt="customer"
+                  />
+                  <div>
+                    <h4>Jessica Brown</h4>
+                    <span>Regular Visitor</span>
+                  </div>
+                </div>
+
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+
+                <p>
+                  Friendly service, quick orders, and delicious food. Highly
+                  recommended!
+                </p>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-top">
+                  <img
+                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg"
+                    alt="customer"
+                  />
+                  <div>
+                    <h4>Jessica Brown</h4>
+                    <span>Regular Visitor</span>
+                  </div>
+                </div>
+
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+
+                <p>
+                  Friendly service, quick orders, and delicious food. Highly
+                  recommended!
+                </p>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-top">
+                  <img
+                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg"
+                    alt="customer"
+                  />
+                  <div>
+                    <h4>Jessica Brown</h4>
+                    <span>Regular Visitor</span>
+                  </div>
+                </div>
+
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+
+                <p>
+                  Friendly service, quick orders, and delicious food. Highly
+                  recommended!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination Dots -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-book-truck">
+      <div class="cta-overlay"></div>
+
+      <div class="container">
+        <div class="cta-content">
+          <h2>Book Our Food Truck for Your Next Event</h2>
+
+          <p>
+            From private parties to corporate events, bring the taste of fresh
+            street food to your guests with our mobile kitchen.
+          </p>
+
+          <div class="cta-buttons">
+            <a href="contact.html" class="cta-btn primary-btn">Book Our Truck</a>
+            <a href="menu.html" class="cta-secondary">View Menu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <!--  Logo + Text -->
+          <!-- Logo + Text + Newsletter -->
+          <div class="footer-col">
+            <div class="logo">
+              <a href="../pages/index.html">
+                <span class="logo-icon">
+                  <i class="fa-solid fa-truck-fast"></i>
+                </span>
+
+                <span class="logo-text-fot"> StreetBite </span>
+              </a>
+            </div>
+
+            <p>
+              Stackly provides modern digital solutions designed to help
+              businesses grow and succeed in the online world.
+            </p>
+
+            <!-- Newsletter -->
+            <div class="footer-newsletter">
+              <h3>Subscribe</h3>
+              <form>
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!--  Menu Items -->
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="index.html">Home Page-1</a>
+              </li>
+               <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="home2.html">Home Page-2</a>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="menu.html">Menu</a>
+              </li>
+              
+                <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="about.html">About</a>
+              </li>
+                 <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="schedule.html">Truck Schedule</a>
+              </li>
+             
+              
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="contact.html">Book Our Truck</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--  Additional Pages -->
+          <div class="footer-col">
+            <h3>Additional Pages</h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="blog.html">Blog</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="blogdetails.html">Blog-Details</a>
+              </li>
+               <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="catering.html">Catering</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="login.html">Login</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="register.html">Register</a>
+              </li>
+             
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="contact.html">Support</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--  Contact + Social -->
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+
+            <div class="footer-contact">
+              <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+              <p><i class="fa-solid fa-envelope"></i> info@stackly.com</p>
+              <p><i class="fa-solid fa-location-dot"></i> Hyderabad, India</p>
+            </div>
+
+            <h3 class="social-heading">Follow Us</h3>
+
+            <div class="footer-social">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+          <p>© 2026 Stackly. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Food Truck</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+NZ+Basic+Guides&family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="../pages/index.html">
+              <span class="logo-icon">
+                <i class="fa-solid fa-truck-fast"></i>
+              </span>
+
+              <span class="logo-text"> StreetBite </span>
+            </a>
+          </div>
+
+          <!-- Hamburger -->
+          <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+
+          <!-- Navigation -->
+          <nav class="nav-menu">
+            <div class="menu-close">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul>
+              <li class="dropdown">
+                <a href="index.html"
+                  >Home
+                  <span class="arrow"
+                    ><i class="fa-solid fa-chevron-down"></i></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../pages/index.html">Home Page 1</a></li>
+                  <li><a href="../pages/home2.html">Home Page 2</a></li>
+                </ul>
+              </li>
+              <li><a href="../pages/menu.html">Menu</a></li>
+              <li><a href="../pages/about.html">About</a></li>
+              <li><a href="../pages/blog.html">Blog</a></li>
+              <li><a href="../pages/schedule.html">Truck Schedule</a></li>
+              <li><a href="../pages/catering.html">Catering</a></li>
+
+              <li><a href="../pages/contact.html">Book Our Truck</a></li>
+            </ul>
+          </nav>
+
+          <!-- Actions -->
+          <div class="nav-actions">
+            <button id="themeToggle" class="icon-btn">
+              <i class="fa-solid fa-sun"></i>
+            </button>
+            <button id="rtlToggle" class="icon-btn">
+              <i class="fa-solid fa-language"></i>
+            </button>
+            <a href="login.html" class="btn-login">Login</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="booking-hero">
+      <div class="booking-overlay"></div>
+
+      <div class="container">
+        <div class="booking-hero-content">
+          <h1>Book Our Food Truck</h1>
+
+          <p>
+            Make your event unforgettable with our food truck serving fresh,
+            handcrafted street food and bold flavors your guests will love.
+          </p>
+
+          <div class="menu-breadcrumb">
+            <a href="index.html"> <i class="fa-solid fa-house"></i> Home </a>
+
+            <span class="breadcrumb-separator">
+              <i class="fa-solid fa-angle-right"></i>
+            </span>
+
+            <span class="breadcrumb-current"> Book Our Truck </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="event-types-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Perfect for Every Event</h2>
+
+          <p>
+            Our food truck brings fresh flavors and unforgettable experiences to
+            a wide range of events and celebrations.
+          </p>
+        </div>
+
+        <div class="event-types-grid">
+          <!-- Event 1 -->
+
+          <div class="event-type-card">
+            <div class="event-icon">
+              <i class="fa-solid fa-cake-candles"></i>
+            </div>
+
+            <h3>Private Parties</h3>
+
+            <p>
+              Celebrate birthdays and private gatherings with delicious street
+              food served fresh at your event.
+            </p>
+          </div>
+
+          <!-- Event 2 -->
+
+          <div class="event-type-card">
+            <div class="event-icon">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+
+            <h3>Corporate Events</h3>
+
+            <p>
+              Treat your team and guests with premium food truck catering for
+              meetings and company celebrations.
+            </p>
+          </div>
+
+          <!-- Event 3 -->
+
+          <div class="event-type-card">
+            <div class="event-icon">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <h3>Weddings</h3>
+
+            <p>
+              Make your wedding celebration unique with a vibrant food truck
+              serving handcrafted dishes.
+            </p>
+          </div>
+
+          <!-- Event 4 -->
+
+          <div class="event-type-card">
+            <div class="event-icon">
+              <i class="fa-solid fa-music"></i>
+            </div>
+
+            <h3>Festivals</h3>
+
+            <p>
+              From music festivals to street fairs, our truck delivers amazing
+              flavors to large crowds.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="booking-form-section">
+      <div class="container">
+        <div class="booking-wrapper">
+          <!-- LEFT INFO -->
+
+          <div class="booking-info">
+            <h2>Book Our Food Truck</h2>
+
+            <p>
+              Planning an event? Our food truck brings delicious street food and
+              unforgettable experiences to weddings, corporate events, private
+              parties, and festivals.
+            </p>
+
+            <div class="booking-features">
+              <div class="feature-item">
+                <i class="fa-solid fa-utensils"></i>
+                <span>Fresh & Custom Menu</span>
+              </div>
+
+              <div class="feature-item">
+                <i class="fa-solid fa-truck"></i>
+                <span>Mobile Catering Service</span>
+              </div>
+
+              <div class="feature-item">
+                <i class="fa-solid fa-people-group"></i>
+                <span>Perfect for Any Event</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- FORM -->
+
+          <div class="booking-form">
+            <form id="bookingForm">
+              <div class="form-grid">
+                <div class="form-group">
+                  <input type="text" name="name" required />
+                  <label>Full Name</label>
+                  <span class="input-error">Please enter your name</span>
+                  <i class="fa-solid fa-circle-check input-success"></i>
+                </div>
+
+                <div class="form-group">
+                  <input type="email" name="email" required />
+                  <label>Email Address</label>
+                  <span class="input-error">Enter a valid email</span>
+                  <i class="fa-solid fa-circle-check input-success"></i>
+                </div>
+
+                <div class="form-group">
+                  <input type="text" name="phone" maxlength="10" required />
+                  <label>Phone Number</label>
+                  <span class="input-error">Only numbers allowed</span>
+                  <i class="fa-solid fa-circle-check input-success"></i>
+                </div>
+
+                <div class="form-group">
+                  <input type="date" name="date" required />
+                  <label>Event Date</label>
+                  <span class="input-error">Select a date</span>
+                  <i class="fa-solid fa-circle-check input-success"></i>
+                </div>
+
+                <div class="form-group">
+                  <select name="event" required>
+                    <option value="">Event Type</option>
+                    <option>Private Party</option>
+                    <option>Corporate Event</option>
+                    <option>Wedding</option>
+                    <option>Festival</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <input type="number" name="guests" min="1" required />
+                  <label>Number of Guests</label>
+                  <span class="input-error">Minimum 1 guest</span>
+                  <i class="fa-solid fa-circle-check input-success"></i>
+                </div>
+              </div>
+
+              <div class="form-group full">
+                <textarea name="details" required></textarea>
+                <label>Event Details</label>
+                <span class="input-error">Enter event details</span>
+              </div>
+
+              <button class="booking-submit">Send Booking Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <!--  Logo + Text -->
+          <!-- Logo + Text + Newsletter -->
+          <div class="footer-col">
+            <div class="logo">
+              <a href="../pages/index.html">
+                <span class="logo-icon">
+                  <i class="fa-solid fa-truck-fast"></i>
+                </span>
+
+                <span class="logo-text-fot"> StreetBite </span>
+              </a>
+            </div>
+
+            <p>
+              Stackly provides modern digital solutions designed to help
+              businesses grow and succeed in the online world.
+            </p>
+
+            <!-- Newsletter -->
+            <div class="footer-newsletter">
+              <h3>Subscribe</h3>
+              <form>
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!--  Menu Items -->
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="index.html">Home Page-1</a>
+              </li>
+               <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="home2.html">Home Page-2</a>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="menu.html">Menu</a>
+              </li>
+              
+                <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="about.html">About</a>
+              </li>
+                 <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="schedule.html">Truck Schedule</a>
+              </li>
+             
+              
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="contact.html">Book Our Truck</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--  Additional Pages -->
+          <div class="footer-col">
+            <h3>Additional Pages</h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="blog.html">Blog</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="blogdetails.html">Blog-Details</a>
+              </li>
+               <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="catering.html">Catering</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="login.html">Login</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="register.html">Register</a>
+              </li>
+             
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="contact.html">Support</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--  Contact + Social -->
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+
+            <div class="footer-contact">
+              <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+              <p><i class="fa-solid fa-envelope"></i> info@stackly.com</p>
+              <p><i class="fa-solid fa-location-dot"></i> Hyderabad, India</p>
+            </div>
+
+            <h3 class="social-heading">Follow Us</h3>
+
+            <div class="footer-social">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+          <p>© 2026 Stackly. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- SUCCESS POPUP -->
+
+    <div class="booking-popup">
+      <div class="popup-content">
+        <div class="success-checkmark">
+          <div class="check-icon">
+            <span class="icon-line line-tip"></span>
+            <span class="icon-line line-long"></span>
+          </div>
+        </div>
+
+        <h3>Booking Request Sent!</h3>
+
+        <p>Our team will contact you shortly.</p>
+
+        <button class="popup-close">Close</button>
+      </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

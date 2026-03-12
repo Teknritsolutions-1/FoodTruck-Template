@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Food Truck</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+NZ+Basic+Guides&family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="../pages/index.html">
+              <span class="logo-icon">
+                <i class="fa-solid fa-truck-fast"></i>
+              </span>
+
+              <span class="logo-text"> StreetBite </span>
+            </a>
+          </div>
+
+          <!-- Hamburger -->
+          <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+
+          <!-- Navigation -->
+          <nav class="nav-menu">
+            <ul>
+              <li class="dropdown">
+                <a href="index.html"
+                  >Home
+                  <span class="arrow"
+                    ><i class="fa-solid fa-chevron-down"></i></span
+                ></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../pages/index.html">Home Page 1</a></li>
+                  <li><a href="../pages/home2.html">Home Page 2</a></li>
+                </ul>
+              </li>
+              <li><a href="../pages/menu.html">Menu</a></li>
+              <li><a href="../pages/about.html">About</a></li>
+              <li><a href="../pages/blog.html">Blog</a></li>
+              <li><a href="../pages/schedule.html">Truck Schedule</a></li>
+              <li><a href="../pages/catering.html">Catering</a></li>
+              
+              <li><a href="../pages/contact.html">Book Our Truck</a></li>
+            </ul>
+          </nav>
+
+          <!-- Actions -->
+          <div class="nav-actions">
+            <button id="themeToggle" class="icon-btn">
+              <i class="fa-solid fa-sun"></i>
+            </button>
+            <button id="rtlToggle" class="icon-btn">
+              <i class="fa-solid fa-language"></i>
+            </button>
+            <a href="login.html" class="btn-login">Login</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="menu-hero-slider">
+      <div class="swiper menuHeroSwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <img src="../assets/images/food-1.jpg" alt="Food" />
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <img src="../assets/images/food-2.jpg" alt="Food" />
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <img src="../assets/images/food-3.jpg" alt="Food" />
+          </div>
+        </div>
+      </div>
+
+      <!-- overlay -->
+      <div class="menu-hero-overlay"></div>
+
+      <div class="container">
+        <div class="menu-hero-content">
+          <h1>Explore Our Delicious Menu</h1>
+
+          <p>
+            Fresh street food crafted with bold flavors, premium ingredients and
+            unforgettable taste.
+          </p>
+
+          <div class="menu-breadcrumb">
+            <a href="index.html"> <i class="fa-solid fa-house"></i> Home </a>
+
+            <span class="breadcrumb-separator">
+              <i class="fa-solid fa-angle-right"></i>
+            </span>
+
+            <span class="breadcrumb-current"> Menu </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="menu-category-section">
+      <div class="container">
+        <div class="menu-category-header">
+          <h2>Browse Our Menu</h2>
+          <p>Select a category to explore our delicious street food.</p>
+        </div>
+
+        <div class="menu-category-filters">
+          <button class="menu-filter active" data-filter="all">
+            <i class="fa-solid fa-utensils"></i> All
+          </button>
+
+          <button class="menu-filter" data-filter="burger">
+            <i class="fa-solid fa-burger"></i> Burgers
+          </button>
+
+          <button class="menu-filter" data-filter="taco">
+            <i class="fa-solid fa-pepper-hot"></i> Tacos
+          </button>
+
+          <button class="menu-filter" data-filter="fries">
+            <i class="fa-solid fa-bowl-food"></i> Fries
+          </button>
+
+          <button class="menu-filter" data-filter="pizza">
+            <i class="fa-solid fa-pizza-slice"></i> Pizza
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="menu-items-section">
+      <div class="container">
+        <div class="menu-grid">
+          <!-- ================= BURGERS ================= -->
+
+          <div class="menu-item" data-category="burger">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="../assets/images/burger1.jpg" alt="Burger" />
+                <span class="menu-price">$8.99</span>
+                <div class="menu-overlay">
+                  <button class="quick-view">Quick View</button>
+                </div>
+              </div>
+              <div class="menu-content">
+                <h3>Classic Burger</h3>
+                <div class="menu-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p>
+                  Grilled chicken patty with lettuce, tomato, and house sauce.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="burger">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="../assets/images/burger2.jpg" alt="Burger" />
+                <span class="menu-price">$9.50</span>
+                <div class="menu-overlay">
+                  <button class="quick-view">Quick View</button>
+                </div>
+              </div>
+              <div class="menu-content">
+                <h3>Double Cheese Burger</h3>
+                <div class="menu-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Two juicy patties layered with melted cheddar cheese.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="burger">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="../assets/images/burger3.jpg" alt="Burger" />
+                <span class="menu-price">$10.20</span>
+                <div class="menu-overlay">
+                  <button class="quick-view">Quick View</button>
+                </div>
+              </div>
+              <div class="menu-content">
+                <h3>BBQ Smoke Burger</h3>
+                <div class="menu-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Smoky BBQ sauce with crispy onions and grilled beef.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="burger">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="../assets/images/burger4.jpg" alt="Burger" />
+                <span class="menu-price">$9.80</span>
+                <div class="menu-overlay">
+                  <button class="quick-view">Quick View</button>
+                </div>
+              </div>
+              <div class="menu-content">
+                <h3>Spicy Jalapeño Burger</h3>
+                <div class="menu-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p>
+                  Spicy jalapeños with pepper jack cheese and chipotle mayo.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= TACOS ================= -->
+
+          <div class="menu-item" data-category="taco">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="../assets/images/taco1.jpg" alt="Taco" />
+                <span class="menu-price">$6.50</span>
+                <div class="menu-overlay">
+                  <button class="quick-view">Quick View</button>
+                </div>
+              </div>
+              <div class="menu-content">
+                <h3>Street Chicken Tacos</h3>
+                <div class="menu-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Grilled chicken with fresh salsa and lime crema.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="taco">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="../assets/images/taco2.jpg" alt="Taco" />
+                <span class="menu-price">$7.20</span>
+                <div class="menu-overlay">
+                  <button class="quick-view">Quick View</button>
+                </div>
+              </div>
+              <div class="menu-content">
+                <h3>Barbacoa Tacos</h3>
+                <div class="menu-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Slow-cooked chicken with onions, cilantro, and lime.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="taco">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="../assets/images/taco3.jpg" alt="Taco" />
+                <span class="menu-price">$6.90</span>
+                <div class="menu-overlay">
+                  <button class="quick-view">Quick View</button>
+                </div>
+              </div>
+              <div class="menu-content">
+                <h3>Spicy Shrimp Tacos</h3>
+                <div class="menu-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Grilled shrimp with spicy sauce and crunchy cabbage.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="taco">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="../assets/images/taco4.jpg" alt="Taco" />
+                <span class="menu-price">$7.80</span>
+                <div class="menu-overlay">
+                  <button class="quick-view">Quick View</button>
+                </div>
+              </div>
+              <div class="menu-content">
+                <h3>Veggie Fiesta Tacos</h3>
+                <div class="menu-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Grilled veggies with avocado and chipotle sauce.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= FRIES ================= -->
+
+          <div class="menu-item" data-category="fries">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="../assets/images/fries1.jpg" alt="Fries" />
+                <span class="menu-price">$4.50</span>
+                <div class="menu-overlay">
+                  <button class="quick-view">Quick View</button>
+                </div>
+              </div>
+              <div class="menu-content">
+                <h3>Classic French Fries</h3>
+                <div class="menu-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Crispy golden fries with sea salt seasoning.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="fries">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="../assets/images/fries2.jpg" alt="Fries" />
+                <span class="menu-price">$5.20</span>
+                <div class="menu-overlay">
+                  <button class="quick-view">Quick View</button>
+                </div>
+              </div>
+              <div class="menu-content">
+                <h3>Loaded Cheese Fries</h3>
+                <div class="menu-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Fries topped with melted cheese and creamy sauce.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="fries">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="../assets/images/fries3.jpg" alt="Fries" />
+                <span class="menu-price">$5.80</span>
+                <div class="menu-overlay">
+                  <button class="quick-view">Quick View</button>
+                </div>
+              </div>
+              <div class="menu-content">
+                <h3>Chili Fries</h3>
+                <div class="menu-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Loaded fries topped with spicy chili and cheese.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="fries">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="../assets/images/fries4.jpg" alt="Fries" />
+                <span class="menu-price">$5.40</span>
+                <div class="menu-overlay">
+                  <button class="quick-view">Quick View</button>
+                </div>
+              </div>
+              <div class="menu-content">
+                <h3>Garlic Parmesan Fries</h3>
+                <div class="menu-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Crispy fries tossed with garlic butter and parmesan.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= PIZZA ================= -->
+
+          <div class="menu-item" data-category="pizza">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="../assets/images/pizza1.jpg" alt="Pizza" />
+                <span class="menu-price">$11.50</span>
+                <div class="menu-overlay">
+                  <button class="quick-view">Quick View</button>
+                </div>
+              </div>
+              <div class="menu-content">
+                <h3>Classic Margherita</h3>
+                <div class="menu-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Fresh mozzarella, basil leaves, and tomato sauce.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="pizza">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="../assets/images/pizza2.jpg" alt="Pizza" />
+                <span class="menu-price">$12.20</span>
+                <div class="menu-overlay">
+                  <button class="quick-view">Quick View</button>
+                </div>
+              </div>
+              <div class="menu-content">
+                <h3>Pepperoni Delight</h3>
+                <div class="menu-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Loaded with spicy pepperoni and melted mozzarella.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="pizza">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="../assets/images/pizza3.jpg" alt="Pizza" />
+                <span class="menu-price">$13.10</span>
+                <div class="menu-overlay">
+                  <button class="quick-view">Quick View</button>
+                </div>
+              </div>
+              <div class="menu-content">
+                <h3>BBQ Chicken Pizza</h3>
+                <div class="menu-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Grilled chicken, BBQ sauce, onions, and cheese.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="pizza">
+            <div class="menu-card">
+              <div class="menu-image">
+                <img src="../assets/images/pizza4.jpg" alt="Pizza" />
+                <span class="menu-price">$12.80</span>
+                <div class="menu-overlay">
+                  <button class="quick-view">Quick View</button>
+                </div>
+              </div>
+              <div class="menu-content">
+                <h3>Veggie Supreme Pizza</h3>
+                <div class="menu-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p>Loaded with mushrooms, peppers, olives, and onions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="featured-dish">
+      <div class="container">
+        <div class="featured-wrapper">
+          <!-- Food Image -->
+
+          <div class="featured-image">
+            <img
+              src="../assets/images/pizza-special.jpg"
+              alt="Chef Special Pizza"
+            />
+
+            <span class="chef-badge">Chef Special</span>
+          </div>
+
+          <!-- Content -->
+
+          <div class="featured-content">
+            <h2>BBQ Chicken Signature Pizza</h2>
+
+            <div class="featured-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(128 Reviews)</span>
+            </div>
+
+            <p>
+              Our wood-fired BBQ chicken pizza is crafted with smoked grilled
+              chicken, caramelized onions, mozzarella cheese, and our signature
+              BBQ glaze for the perfect balance of sweet and savory flavors.
+            </p>
+
+            <div class="featured-price">$13.99</div>
+
+            <a href="#" class="featured-btn">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="cta-overlay"></div>
+
+      <div class="container">
+        <div class="cta-content">
+          <h2>Craving Something Delicious?</h2>
+
+          <p>
+            Find our food truck near you today and enjoy freshly prepared street
+            food made with bold flavors and premium ingredients.
+          </p>
+
+          <div class="cta-buttons">
+            <a href="schedule.html" class="cta-btn primary-btn">
+              Find Our Truck
+            </a>
+
+            <a href="book.html" class="cta-btn secondary-btn">
+              Book Our Truck
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <!--  Logo + Text -->
+          <!-- Logo + Text + Newsletter -->
+          <div class="footer-col">
+            <div class="logo">
+              <a href="../pages/index.html">
+                <span class="logo-icon">
+                  <i class="fa-solid fa-truck-fast"></i>
+                </span>
+
+                <span class="logo-text-fot"> StreetBite </span>
+              </a>
+            </div>
+
+            <p>
+              Stackly provides modern digital solutions designed to help
+              businesses grow and succeed in the online world.
+            </p>
+
+            <!-- Newsletter -->
+            <div class="footer-newsletter">
+              <h3>Subscribe</h3>
+              <form>
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!--  Menu Items -->
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="index.html">Home Page-1</a>
+              </li>
+               <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="home2.html">Home Page-2</a>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="menu.html">Menu</a>
+              </li>
+              
+                <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="about.html">About</a>
+              </li>
+                 <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="schedule.html">Truck Schedule</a>
+              </li>
+             
+              
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="contact.html">Book Our Truck</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--  Additional Pages -->
+          <div class="footer-col">
+            <h3>Additional Pages</h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="blog.html">Blog</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="blogdetails.html">Blog-Details</a>
+              </li>
+               <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="catering.html">Catering</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="login.html">Login</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="register.html">Register</a>
+              </li>
+             
+              <li>
+                <i class="fa-solid fa-chevron-right list-icon"></i
+                ><a href="contact.html">Support</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--  Contact + Social -->
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+
+            <div class="footer-contact">
+              <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+              <p><i class="fa-solid fa-envelope"></i> info@stackly.com</p>
+              <p><i class="fa-solid fa-location-dot"></i> Hyderabad, India</p>
+            </div>
+
+            <h3 class="social-heading">Follow Us</h3>
+
+            <div class="footer-social">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+          <p>© 2026 Stackly. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- ================= QUICK VIEW MODAL ================= -->
+
+    <div class="menu-modal" id="menuModal">
+      <div class="menu-modal-content">
+        <span class="menu-close">&times;</span>
+
+        <div class="menu-modal-body">
+          <img id="modalImage" src="" alt="Food" />
+
+          <div class="modal-details">
+            <h2 id="modalTitle">Food Name</h2>
+
+            <p id="modalDescription">Food description will appear here.</p>
+
+            <div class="modal-price">$0.00</div>
+
+            <button class="modal-order-btn">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

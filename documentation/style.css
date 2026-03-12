@@ -1,0 +1,109 @@
+body{
+font-family:Inter,sans-serif;
+margin:0;
+background:#f8fafc;
+color:#333;
+}
+
+.doc-header{
+background:#111827;
+color:white;
+padding:20px;
+position:sticky;
+top:0;
+z-index:10;
+}
+
+.doc-header-wrapper{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1200px;
+margin:auto;
+}
+
+#searchBox{
+padding:8px 12px;
+border-radius:6px;
+border:none;
+}
+
+.doc-layout{
+display:flex;
+max-width:1200px;
+margin:auto;
+}
+
+.doc-sidebar{
+width:250px;
+background:white;
+border-right:1px solid #eee;
+padding:30px;
+height:100vh;
+position:sticky;
+top:70px;
+}
+
+.doc-sidebar ul{
+list-style:none;
+padding:0;
+}
+
+.doc-sidebar li{
+margin-bottom:10px;
+}
+
+.doc-sidebar a{
+text-decoration:none;
+color:#333;
+}
+
+.doc-sidebar a:hover{
+color:#f84c07;
+}
+
+.doc-content{
+flex:1;
+padding:40px;
+}
+
+.code-block{
+position:relative;
+background:#111;
+color:#eee;
+border-radius:8px;
+margin:20px 0;
+}
+
+.code-block pre{
+padding:20px;
+overflow:auto;
+}
+
+.copy-btn{
+position:absolute;
+top:10px;
+right:10px;
+background:#f84c07;
+border:none;
+color:white;
+padding:5px 10px;
+cursor:pointer;
+border-radius:4px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+table th, table td{
+border:1px solid #ddd;
+padding:12px;
+text-align:left;
+}
+
+table th{
+background:#f3f4f6;
+}
