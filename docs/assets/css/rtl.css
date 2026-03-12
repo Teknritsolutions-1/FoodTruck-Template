@@ -36,7 +36,7 @@ right:auto;
 left:25px;
 }
 
-html[dir="rtl"] .nav-menu{
+/* html[dir="rtl"] .nav-menu{
 left:auto;
 right:0;
 transform:translateX(100%);
@@ -44,7 +44,7 @@ transform:translateX(100%);
 
 html[dir="rtl"] .nav-menu.active{
 transform:translateX(0);
-}
+} */
 
 /* ======================================
 DROPDOWN
@@ -260,5 +260,12 @@ direction:rtl;
 }
 
 html[dir="rtl"] .footer-social{
+flex-direction:row-reverse;
+}
+html[dir="rtl"] .comingsoon-actions{
+flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .comingsoon-subscribe{
 flex-direction:row-reverse;
 }

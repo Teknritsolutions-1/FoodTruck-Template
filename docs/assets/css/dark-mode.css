@@ -708,3 +708,22 @@ body.dark-mode .register-group label{
 background:#000;
 color:#bbb;
 }
+body.dark-mode .error404-section{
+background:linear-gradient(135deg,#020617,#000);
+}
+
+body.dark-mode .error404-wrapper p{
+color:#94a3b8;
+}
+
+body.dark-mode .error-btn-outline{
+border-color:var(--primary-color);
+color:#fff;
+}
+body.dark-mode .comingsoon-overlay{
+background:rgba(0,0,0,0.75);
+}
+
+body.dark-mode .timer-box{
+background:rgba(255,255,255,0.08);
+}
