@@ -370,7 +370,7 @@ body.dark-mode .truck-schedule{
 background:#000;
 }
 
-body.dark-mode .truck-schedule::before{
+body.dark-mode .truck-schedule.today::before{
 background-image:linear-gradient(
 45deg,
 rgba(255,255,255,0.05) 25%,
@@ -726,4 +726,150 @@ background:rgba(0,0,0,0.75);
 
 body.dark-mode .timer-box{
 background:rgba(255,255,255,0.08);
+}
+
+/* ===============================
+   DARK MODE - NEUTRAL PALETTE
+================================ */
+
+body.dark-mode{
+  --dm-bg:#0b0f14;
+  --dm-surface:#151a20;
+  --dm-card:#1c2128;
+  --dm-border:#2b3138;
+  --dm-muted:#b3bac4;
+}
+
+body.dark-mode{
+  background-color:var(--dm-bg);
+  color:#ffffff;
+}
+
+body.dark-mode p,
+body.dark-mode .section-heading > p,
+body.dark-mode .testimonial-top span,
+body.dark-mode .team-info span,
+body.dark-mode .price span,
+body.dark-mode .blog-featured-content p,
+body.dark-mode .menu-content p,
+body.dark-mode .dish-info p,
+body.dark-mode .gallery-heading p,
+body.dark-mode .timeline-content p,
+body.dark-mode .event-content p,
+body.dark-mode .package-list li,
+body.dark-mode .blog-content p{
+  color:var(--dm-muted);
+}
+
+body.dark-mode .header,
+body.dark-mode .nav-menu,
+body.dark-mode .dropdown-menu,
+body.dark-mode .popular-dishes,
+body.dark-mode .about-truck,
+body.dark-mode .testimonials,
+body.dark-mode .hero-premium,
+body.dark-mode .food-gallery,
+body.dark-mode .instagram-feed,
+body.dark-mode .featured-dish,
+body.dark-mode .our-story-section,
+body.dark-mode .why-choose-section,
+body.dark-mode .team-section,
+body.dark-mode .events-section,
+body.dark-mode .event-types-section,
+body.dark-mode .booking-form-section,
+body.dark-mode .catering-tab-section,
+body.dark-mode .catering-menu-section,
+body.dark-mode .catering-packages-premium,
+body.dark-mode .blog-premium-section,
+body.dark-mode .truck-schedule{
+  background:var(--dm-bg);
+}
+
+body.dark-mode .truck-catering{
+  background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url('../images/catering-bg.jpg') center/cover no-repeat;
+}
+
+body.dark-mode .dish-card,
+body.dark-mode .schedule-card,
+body.dark-mode .testimonial-card,
+body.dark-mode .hero-tag,
+body.dark-mode .about-tag,
+body.dark-mode .timeline-content,
+body.dark-mode .menu-card,
+body.dark-mode .menu-filter,
+body.dark-mode .story-stat,
+body.dark-mode .why-card,
+body.dark-mode .team-card,
+body.dark-mode .event-card,
+body.dark-mode .event-type-card,
+body.dark-mode .popup-content,
+body.dark-mode .booking-form,
+body.dark-mode .catering-tab-card,
+body.dark-mode .catering-menu-card,
+body.dark-mode .package-box,
+body.dark-mode .blog-card,
+body.dark-mode .login-card,
+body.dark-mode .register-card,
+body.dark-mode .catering-card{
+  background:var(--dm-card);
+}
+
+body.dark-mode .dropdown-menu li a:hover,
+body.dark-mode .nav-menu a.active,
+body.dark-mode .blog-filter,
+body.dark-mode .catering-tab-buttons label{
+  background:var(--dm-surface);
+  color:#e5e7eb;
+  border-color:var(--dm-border);
+}
+
+body.dark-mode .catering-tab-buttons label:hover{
+  background:var(--dm-surface);
+}
+
+body.dark-mode .schedule-card,
+body.dark-mode .catering-tab-item,
+body.dark-mode .menu-item,
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea,
+body.dark-mode .form-group select{
+  border-color:var(--dm-border);
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea,
+body.dark-mode .form-group select{
+  background:var(--dm-bg);
+  color:#ffffff;
+}
+
+body.dark-mode .swiper-pagination-bullet{
+  background:var(--dm-border);
+}
+
+body.dark-mode .truck-timeline{
+  background:linear-gradient(180deg,#0b0f14,#151a20);
+}
+
+body.dark-mode section h2{
+  background:none;
+  -webkit-text-fill-color:#ffffff;
+  color:#ffffff;
+  text-shadow:0 2px 10px rgba(0,0,0,0.45);
+}
+
+body.dark-mode .truck-catering .section-heading h2,
+body.dark-mode .hero-home2 .hero-box h1{
+  text-shadow:0 3px 12px rgba(0,0,0,0.55);
+}
+
+body.dark-mode .hero-box span{
+  color:#ffd2b5;
+  text-shadow:0 2px 10px rgba(0,0,0,0.55);
+}
+
+body.dark-mode .header{
+  box-shadow:0 6px 18px rgba(0,0,0,0.55);
 }
