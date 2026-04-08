@@ -2,12 +2,12 @@
 
 
 body.dark-mode {
-  background-color: #000;
-  color: #f1f5f9;
+  background-color: #121212;
+  color: #ffffff;
 }
 
 body.dark-mode p {
-  color: #cbd5e1;
+  color: #b3b3b3;
 }
 
 body.dark-mode h1,
@@ -18,32 +18,32 @@ body.dark-mode h3 {
 
 
 body.dark-mode .header {
-  background: #000;
+  background: #121212;
 }
 
 
 
 body.dark-mode .dropdown-menu li a:hover {
-  background-color: #334155;
+  background-color: #2f2f2f;
   color: var(--primary-color);
 }
 
 body.dark-mode .nav-menu a.active {
-  background: #374151;
+  background: transparent;
   color: var(--primary-color);
 }
 
 body.dark-mode .icon-btn i {
-  color: #e5e7eb;
+  color: #ffffff;
 }
 /* MOBILE MENU DARK MODE */
 
 body.dark-mode .nav-menu{
-  background:#000;
+  background:#121212;
 }
 
 body.dark-mode .nav-menu a{
-  color:#e5e7eb;
+  color:#ffffff;
 }
 
 body.dark-mode .nav-menu a:hover{
@@ -51,7 +51,15 @@ body.dark-mode .nav-menu a:hover{
 }
 
 body.dark-mode .dropdown-menu{
-  background:#000;
+  background:#121212;
+}
+
+body.dark-mode .nav-menu .dropdown-menu{
+  background:#1a1a1a;
+}
+
+body.dark-mode .nav-menu .dropdown-menu a{
+  color:#ffffff;
 }
 body.dark-mode .logo-text{
 color:#fff;
@@ -61,42 +69,97 @@ color:#fff;
 ========================= */
 
 body.dark-mode .popular-dishes {
-  background: #020617;
+  background: #121212;
 }
 
 body.dark-mode .section-heading > p {
-  color: #94a3b8;
+  color: #b3b3b3;
 }
 
 body.dark-mode .dish-card {
-  background: #1e293b;
+  background: #222222;
 }
 
 body.dark-mode .dish-card > h4 {
-  color: #f1f5f9;
+  color: #ffffff;
 }
 
 body.dark-mode .dish-feature > .dish-content {
   background: linear-gradient(transparent, rgba(0,0,0,0.8));
+}
+
+body.dark-mode .popular-luxe{
+  background:#121212;
+}
+
+body.dark-mode .popular-luxe .luxe-tag{
+  background:#1f1f1f;
+  border-color:#2c2c2c;
+  color:#ffd1a3;
+}
+
+body.dark-mode .popular-luxe .luxe-heading-row p{
+  color:#b3b3b3;
+}
+
+body.dark-mode .popular-luxe .luxe-link{
+  color:#ffffff;
+  border-color:#ffffff;
+}
+
+body.dark-mode .popular-luxe .luxe-link:hover{
+  color:#ffd1a3;
+  border-color:#ffd1a3;
+}
+
+body.dark-mode .popular-luxe .luxe-feature,
+body.dark-mode .popular-luxe .luxe-card{
+  background:#202020;
+  box-shadow:0 20px 50px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .popular-luxe .luxe-feature-body p,
+body.dark-mode .popular-luxe .luxe-card-body p{
+  color:#b3b3b3;
+}
+
+body.dark-mode .popular-luxe .luxe-price,
+body.dark-mode .popular-luxe .luxe-feature-body h3,
+body.dark-mode .popular-luxe .luxe-card-title h4{
+  color:#ffffff;
+}
+
+body.dark-mode .popular-luxe .luxe-rating{
+  background:#1a1a1a;
+  color:#ffd1a3;
+}
+
+body.dark-mode .popular-luxe .luxe-tags span{
+  background:#1a1a1a;
+  color:#b3b3b3;
+}
+
+body.dark-mode .popular-luxe .luxe-card-meta{
+  color:#b3b3b3;
 }
 /* =========================
    DARK MODE - POPULAR DISHES
 ========================= */
 
 body.dark-mode .popular-dishes {
-  background: #020617;
+  background: #121212;
 }
 
 body.dark-mode .section-heading > p {
-  color: #94a3b8;
+  color: #b3b3b3;
 }
 
 body.dark-mode .dish-card {
-  background: #1e293b;
+  background: #222222;
 }
 
 body.dark-mode .dish-card > h4 {
-  color: #f1f5f9;
+  color: #ffffff;
 }
 
 body.dark-mode .dish-feature > .dish-content {
@@ -107,21 +170,21 @@ body.dark-mode .dish-feature > .dish-content {
 ========================= */
 
 body.dark-mode .truck-schedule {
-  background: #000;
+  background: #121212;
 }
 
 body.dark-mode .schedule-card {
-  background: #1e293b;
-  border: 1px solid #334155;
+  background: #222222;
+  border: 1px solid #2f2f2f;
 }
 
 body.dark-mode .schedule-card > h3 {
-  color: #f1f5f9;
+  color: #ffffff;
 }
 
 body.dark-mode .schedule-card > .location,
 body.dark-mode .schedule-card > .time {
-  color: #cbd5e1;
+  color: #b3b3b3;
 }
 
 body.dark-mode .schedule-card:hover {
@@ -131,38 +194,90 @@ body.dark-mode .schedule-card:hover {
   background: var(--primary-color);
 }
 body.dark-mode .about-truck{
-  background:#020617;
+  background:#121212;
+}
+
+body.dark-mode .about-truck.story-luxe{
+  background:linear-gradient(135deg,#121212 0%,#1a1a1a 50%,#121212 100%);
+}
+
+body.dark-mode .story-luxe-tag{
+  background:#1f1f1f;
+  color:#ffd1a3;
+  border-color:#2a2a2a;
+}
+
+body.dark-mode .story-luxe-content h2{
+  color:#ffffff;
+}
+
+body.dark-mode .story-luxe-content p{
+  color:var(--dm-muted);
+}
+
+body.dark-mode .story-luxe-feature,
+body.dark-mode .story-luxe-card{
+  background:var(--dm-card);
+  border-color:var(--dm-border);
+  box-shadow:0 18px 30px rgba(0,0,0,0.35);
+  color:#ffffff;
+}
+
+body.dark-mode .story-luxe-feature i{
+  color:#ffd1a3;
+}
+
+body.dark-mode .story-luxe-card p{
+  color:var(--dm-muted);
+}
+
+body.dark-mode .story-luxe-main{
+  box-shadow:0 30px 60px rgba(0,0,0,0.45);
+}
+
+body.dark-mode .story-luxe-badge{
+  background:rgba(2,6,23,0.9);
+}
+
+body.dark-mode .story-luxe-link{
+  color:#ffffff;
+  border-color:#ffffff;
+}
+
+body.dark-mode .story-luxe-link:hover{
+  color:#ffd1a3;
+  border-color:#ffd1a3;
 }
 
 body.dark-mode .about-content > h3{
-  color:#f1f5f9;
+  color:#ffffff;
 }
 
 body.dark-mode .about-content > p{
-  color:#cbd5e1;
+  color:#b3b3b3;
 }
 
 body.dark-mode .about-img-small img{
-  border:6px solid #020617;
+  border:6px solid #121212;
 }
 /* =========================
    DARK MODE - CATERING
 ========================= */
 
 body.dark-mode .truck-catering{
-  background:#000;
+  background:#121212;
 }
 
 body.dark-mode .catering-card{
-  background:#1e293b;
+  background:#222222;
 }
 
 body.dark-mode .catering-card h3{
-  color:#f1f5f9;
+  color:#ffffff;
 }
 
 body.dark-mode .catering-card p{
-  color:#cbd5e1;
+  color:#b3b3b3;
 }
 
 body.dark-mode .catering-cta h3{
@@ -179,28 +294,28 @@ body.dark-mode .truck-catering p{
 ====================== */
 
 body.dark-mode .testimonials{
-  background:#020617;
+  background:#121212;
 }
 
 body.dark-mode .testimonial-card{
-  background:#1e293b;
+  background:#222222;
   box-shadow:0 12px 35px rgba(0,0,0,0.6);
 }
 
 body.dark-mode .testimonial-card p{
-  color:#cbd5e1;
+  color:#b3b3b3;
 }
 
 body.dark-mode .testimonial-top span{
-  color:#94a3b8;
+  color:#b3b3b3;
 }
 
 body.dark-mode .testimonial-top h4{
-  color:#f1f5f9;
+  color:#ffffff;
 }
 
 body.dark-mode .swiper-pagination-bullet{
-  background:#475569;
+  background:#3a3a3a;
 }
 
 body.dark-mode .swiper-pagination-bullet-active{
@@ -215,44 +330,44 @@ body.dark-mode .cta-overlay{
   background:rgba(0,0,0,0.75);
 }
 body.dark-mode .hero-premium{
-  background:#020617;
+  background:#121212;
 }
 
 body.dark-mode .hero-premium-content p{
-  color:#cbd5e1;
+  color:#b3b3b3;
 }
 
 body.dark-mode .hero-tag{
-  background:#1e293b;
+  background:#222222;
 }
 body.dark-mode .about-truck{
-  background:#020617;
+  background:#121212;
 }
 
 body.dark-mode .about-content p{
-  color:#cbd5e1;
+  color:#b3b3b3;
 }
 
 body.dark-mode .about-tag{
-  background:#1e293b;
+  background:#222222;
 }
 body.dark-mode .food-gallery{
-  background:#020617;
+  background:#121212;
 }
 
 body.dark-mode .gallery-heading p{
-  color:#cbd5e1;
+  color:#b3b3b3;
 }
 body.dark-mode .popular-dishes{
-  background:#020617;
+  background:#121212;
 }
 
 body.dark-mode .dish-card{
-  background:#1e293b;
+  background:#222222;
 }
 
 body.dark-mode .dish-info p{
-  color:#cbd5e1;
+  color:#b3b3b3;
 }
 /* =========================
    TIMELINE DARK MODE
@@ -261,8 +376,8 @@ body.dark-mode .dish-info p{
 body.dark-mode .truck-timeline{
   background:linear-gradient(
     180deg,
-    #020617,
-    #0f172a
+    #121212,
+    #1a1a1a
   );
 }
 body.dark-mode .hero-premium::after{
@@ -270,11 +385,11 @@ background:rgba(0,0,0,0.7);
 }
 
 body.dark-mode .timeline-content{
-  background:#1e293b;
+  background:#222222;
 }
 
 body.dark-mode .timeline-content p{
-  color:#cbd5e1;
+  color:#b3b3b3;
 }
 
 body.dark-mode .timeline-bg-truck{
@@ -286,11 +401,11 @@ body.dark-mode .truck-timeline::after{
   background:rgba(248,76,7,0.12);
 }
 body.dark-mode .instagram-feed{
-  background:#020617;
+  background:#121212;
 }
 
 body.dark-mode .instagram-heading p{
-  color:#cbd5e1;
+  color:#b3b3b3;
 }
 body.dark-mode .cta-overlay{
   background:rgba(0,0,0,0.75);
@@ -299,66 +414,66 @@ body.dark-mode .menu-hero-overlay{
   background:rgba(0,0,0,0.75);
 }
 body.dark-mode .menu-card{
-background:#1e293b;
+background:#222222;
 }
 
 body.dark-mode .menu-content p{
-color:#cbd5e1;
+color:#b3b3b3;
 }
 body.dark-mode .menu-filter{
-  background:#1e293b;
-  color:#e5e7eb;
+  background:#222222;
+  color:#ffffff;
 }
 
 body.dark-mode .menu-filter.active{
   background:var(--primary-color);
 }
 body.dark-mode .featured-dish{
-background:#000;
+background:#121212;
 }
 
 body.dark-mode .featured-content p{
-color:#cbd5e1;
+color:#b3b3b3;
 }
 body.dark-mode .about-overlay{
 background:rgba(0,0,0,0.75);
 }
 body.dark-mode .our-story-section{
-background:#000;
+background:#121212;
 }
 
 body.dark-mode .story-content p{
-color:#cbd5e1;
+color:#b3b3b3;
 }
 
 body.dark-mode .story-stat{
-background:#1e293b;
+background:#222222;
 }
 
 body.dark-mode .story-stat span{
-color:#cbd5e1;
+color:#b3b3b3;
 }
 body.dark-mode .why-choose-section{
-background:#000;
+background:#121212;
 }
 
 body.dark-mode .why-card{
-background:#1e293b;
+background:#222222;
 }
 
 body.dark-mode .why-card p{
-color:#cbd5e1;
+color:#b3b3b3;
 }
 body.dark-mode .team-section{
-background:#000;
+background:#121212;
 }
 
 body.dark-mode .team-card{
-background:#1e293b;
+background:#222222;
 }
 
 body.dark-mode .team-info span{
-color:#cbd5e1;
+color:#b3b3b3;
 }
 body.dark-mode .cta-overlay{
 background:rgba(0,0,0,0.8);
@@ -367,7 +482,7 @@ body.dark-mode .schedule-overlay{
 background:rgba(0,0,0,0.75);
 }
 body.dark-mode .truck-schedule{
-background:#000;
+background:#121212;
 }
 
 body.dark-mode .truck-schedule.today::before{
@@ -382,20 +497,20 @@ transparent 75%
 );
 }
 body.dark-mode .truck-schedule{
-background:#000;
+background:#121212;
 }
 
 body.dark-mode .timeline-content{
-background:#1e293b;
+background:#222222;
 }
 
 body.dark-mode .timeline-content p{
-color:#cbd5e1;
+color:#b3b3b3;
 }
 /* today schedule card */
 
 body.dark-mode .timeline-item.today .timeline-content{
-background:#1e293b;
+background:#222222;
 border-left:4px solid var(--primary-color);
 box-shadow:0 20px 45px rgba(0,0,0,0.5);
 }
@@ -410,15 +525,15 @@ background:var(--primary-color);
 color:#fff;
 }
 body.dark-mode .events-section{
-background:#000;
+background:#121212;
 }
 
 body.dark-mode .event-card{
-background:#1e293b;
+background:#222222;
 }
 
 body.dark-mode .event-content p{
-color:#cbd5e1;
+color:#b3b3b3;
 }
 body.dark-mode .cta-overlay{
 background:rgba(0,0,0,0.8);
@@ -427,57 +542,57 @@ body.dark-mode .booking-overlay{
 background:rgba(0,0,0,0.75);
 }
 body.dark-mode .event-types-section{
-background:#000;
+background:#121212;
 }
 
 body.dark-mode .event-type-card{
-background:#1e293b;
+background:#222222;
 }
 
 body.dark-mode .event-type-card p{
-color:#cbd5e1;
+color:#b3b3b3;
 }
 body.dark-mode .popup-content{
-background:#1e293b;
+background:#222222;
 color:#fff;
 }
 
 body.dark-mode .popup-content p{
-color:#cbd5e1;
+color:#b3b3b3;
 }
 body.dark-mode .booking-form-section{
-background:#000;
+background:#121212;
 }
 
 body.dark-mode .booking-form{
-background:#1e293b;
+background:#222222;
 }
 
 body.dark-mode .form-group input,
 body.dark-mode .form-group textarea,
 body.dark-mode .form-group select{
-background:#000;
+background:#121212;
 color:#fff;
-border-color:#334155;
+border-color:#2f2f2f;
 }
 
 body.dark-mode .form-group label{
-background:#1e293b;
+background:#222222;
 }
 body.dark-mode .catering-tab-section{
-background:#000;
+background:#121212;
 }
 
 body.dark-mode .catering-tab-card{
-background:#1e293b;
+background:#222222;
 }
 
 body.dark-mode .catering-tab-item{
-border-color:#334155;
+border-color:#2f2f2f;
 }
 
 body.dark-mode .catering-tab-item p{
-color:#cbd5e1;
+color:#b3b3b3;
 }
 
 body.dark-mode .catering-tab-item h3{
@@ -488,7 +603,7 @@ color:#fff;
 ========================= */
 
 body.dark-mode .catering-menu-section{
-background:#000;
+background:#121212;
 }
 
 body.dark-mode .catering-title{
@@ -496,20 +611,20 @@ color:#fff;
 }
 
 body.dark-mode .catering-menu-card{
-background:#1e293b;
+background:#222222;
 box-shadow:0 20px 60px rgba(0,0,0,0.5);
 }
 
 body.dark-mode .menu-item{
-border-color:#334155;
+border-color:#2f2f2f;
 }
 
 body.dark-mode .menu-item h3{
-color:#f1f5f9;
+color:#ffffff;
 }
 
 body.dark-mode .menu-item p{
-color:#cbd5e1;
+color:#b3b3b3;
 }
 
 /* =========================
@@ -517,9 +632,9 @@ color:#cbd5e1;
 ========================= */
 
 body.dark-mode .catering-tab-buttons label{
-background:#334155;
-color:#e2e8f0;
-border:1px solid #475569;
+background:#2f2f2f;
+color:#ffffff;
+border:1px solid #3a3a3a;
 }
 
 /* active tab */
@@ -534,30 +649,30 @@ border-color:var(--primary-color);
 /* hover */
 
 body.dark-mode .catering-tab-buttons label:hover{
-background:#475569;
+background:#3a3a3a;
 }
 /* =========================
    DARK MODE - CATERING PACKAGES
 ========================= */
 
 body.dark-mode .catering-packages-premium{
-background:#000;
+background:#121212;
 }
 
 /* section title */
 
 body.dark-mode .packages-header h2{
-color:#f1f5f9;
+color:#ffffff;
 }
 
 body.dark-mode .packages-header p{
-color:#cbd5e1;
+color:#b3b3b3;
 }
 
 /* package card */
 
 body.dark-mode .package-box{
-background:#1e293b;
+background:#222222;
 box-shadow:0 20px 60px rgba(0,0,0,0.6);
 }
 
@@ -570,11 +685,11 @@ box-shadow:0 30px 80px rgba(0,0,0,0.8);
 /* text */
 
 body.dark-mode .package-box h3{
-color:#f1f5f9;
+color:#ffffff;
 }
 
 body.dark-mode .package-list li{
-color:#cbd5e1;
+color:#b3b3b3;
 }
 
 /* icons between menu items */
@@ -586,7 +701,7 @@ color:var(--primary-color);
 /* price */
 
 body.dark-mode .price span{
-color:#94a3b8;
+color:#b3b3b3;
 }
 
 /* button */
@@ -613,25 +728,25 @@ color:#fff;
 ================================ */
 
 body.dark-mode .blog-premium-section{
-background:#000;
+background:#121212;
 }
 
 /* featured */
 
 body.dark-mode .blog-featured-content h2{
-color:#f1f5f9;
+color:#ffffff;
 }
 
 body.dark-mode .blog-featured-content p{
-color:#cbd5e1;
+color:#b3b3b3;
 }
 
 /* filters */
 
 body.dark-mode .blog-filter{
-background:#334155;
-color:#e2e8f0;
-border:1px solid #475569;
+background:#2f2f2f;
+color:#ffffff;
+border:1px solid #3a3a3a;
 }
 
 body.dark-mode .blog-filter.active{
@@ -642,7 +757,7 @@ color:#fff;
 /* blog cards */
 
 body.dark-mode .blog-card{
-background:#1e293b;
+background:#222222;
 box-shadow:0 15px 40px rgba(0,0,0,0.6);
 }
 
@@ -653,11 +768,11 @@ box-shadow:0 25px 70px rgba(0,0,0,0.8);
 /* text */
 
 body.dark-mode .blog-content h3{
-color:#f1f5f9;
+color:#ffffff;
 }
 
 body.dark-mode .blog-content p{
-color:#cbd5e1;
+color:#b3b3b3;
 }
 
 /* read more */
@@ -684,13 +799,13 @@ color:#fff;
 }
 
 body.dark-mode .login-group input{
-background:#000;
+background:#121212;
 border-color:#444;
 color:#fff;
 }
 
 body.dark-mode .login-group label{
-background:#000;
+background:#121212;
 color:#bbb;
 }
 body.dark-mode .register-card{
@@ -699,21 +814,84 @@ color:#fff;
 }
 
 body.dark-mode .register-group input{
-background:#000;
+background:#121212;
 border-color:#444;
 color:#fff;
 }
 
 body.dark-mode .register-group label{
-background:#000;
+background:#121212;
 color:#bbb;
 }
+
+body.dark-mode .premium-login,
+body.dark-mode .premium-register{
+  background:#121212;
+}
+
+body.dark-mode .auth-shell{
+  background:#1a1a1a;
+  box-shadow:0 35px 90px rgba(0,0,0,0.45);
+}
+
+body.dark-mode .auth-panel-content{
+  background:#1a1a1a;
+}
+
+body.dark-mode .auth-logo .logo-text,
+body.dark-mode .auth-heading h2{
+  color:#ffffff;
+}
+
+body.dark-mode .auth-heading p,
+body.dark-mode .auth-field label,
+body.dark-mode .auth-footer{
+  color:#b3b3b3;
+}
+
+body.dark-mode .auth-field input{
+  background:#121212;
+  border-color:#2c2c2c;
+  color:#ffffff;
+}
+
+body.dark-mode .auth-divider::before,
+body.dark-mode .auth-divider::after{
+  background:#2c2c2c;
+}
+
+body.dark-mode .provider{
+  background:#1f1f1f;
+  border-color:#2c2c2c;
+  color:#ffffff;
+}
+
+body.dark-mode .provider:hover{
+  color:#ffd1a3;
+  border-color:#ffd1a3;
+}
+
+body.dark-mode .provider.apple{
+  background:#000000;
+  border-color:#000000;
+  color:#ffffff;
+}
+
+body.dark-mode .auth-top-actions .icon-btn{
+  background:#1a1a1a;
+  border-color:#2c2c2c;
+  box-shadow:0 10px 20px rgba(0,0,0,0.45);
+}
+
+body.dark-mode .auth-top-actions .icon-btn i{
+  color:#ffffff;
+}
 body.dark-mode .error404-section{
-background:linear-gradient(135deg,#020617,#000);
+background:linear-gradient(135deg,#121212,#121212);
 }
 
 body.dark-mode .error404-wrapper p{
-color:#94a3b8;
+color:#b3b3b3;
 }
 
 body.dark-mode .error-btn-outline{
@@ -733,11 +911,11 @@ background:rgba(255,255,255,0.08);
 ================================ */
 
 body.dark-mode{
-  --dm-bg:#0b0f14;
-  --dm-surface:#151a20;
-  --dm-card:#1c2128;
-  --dm-border:#2b3138;
-  --dm-muted:#b3bac4;
+  --dm-bg:#121212;
+  --dm-surface:#1a1a1a;
+  --dm-card:#202020;
+  --dm-border:#2c2c2c;
+  --dm-muted:#b3b3b3;
 }
 
 body.dark-mode{
@@ -787,7 +965,7 @@ body.dark-mode .truck-schedule{
 
 body.dark-mode .truck-catering{
   background:
-    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
     url('../images/catering-bg.jpg') center/cover no-repeat;
 }
 
@@ -821,8 +999,13 @@ body.dark-mode .nav-menu a.active,
 body.dark-mode .blog-filter,
 body.dark-mode .catering-tab-buttons label{
   background:var(--dm-surface);
-  color:#e5e7eb;
+  color:#ffffff;
   border-color:var(--dm-border);
+}
+
+body.dark-mode .nav-menu a.active{
+  background: transparent;
+  color: var(--primary-color);
 }
 
 body.dark-mode .catering-tab-buttons label:hover{
@@ -850,7 +1033,7 @@ body.dark-mode .swiper-pagination-bullet{
 }
 
 body.dark-mode .truck-timeline{
-  background:linear-gradient(180deg,#0b0f14,#151a20);
+  background:linear-gradient(180deg,#121212,#1a1a1a);
 }
 
 body.dark-mode section h2{
@@ -870,6 +1053,48 @@ body.dark-mode .hero-box span{
   text-shadow:0 2px 10px rgba(0,0,0,0.55);
 }
 
+body.dark-mode .truck-catering::before{
+  background:rgba(0,0,0,0.75);
+}
+
+body.dark-mode .truck-catering .section-heading h2,
+body.dark-mode .truck-catering .section-heading p,
+body.dark-mode .truck-catering .catering-cta h3{
+  color:#ffffff;
+  text-shadow:0 4px 16px rgba(0,0,0,0.75);
+}
+
+body.dark-mode .truck-catering .catering-card i{
+  color:#ffba8a;
+  text-shadow:0 2px 10px rgba(0,0,0,0.55);
+}
+
+body.dark-mode .hero-home2::after{
+  background:rgba(0,0,0,0.7);
+}
+
+body.dark-mode .hero-home2 .hero-box{
+  background:rgba(15,23,42,0.7);
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+body.dark-mode .hero-home2 .hero-box h1{
+  color:#ffffff;
+  text-shadow:0 4px 16px rgba(0,0,0,0.75);
+}
+
+body.dark-mode .hero-home2 .hero-box p{
+  color:#ffffff;
+  text-shadow:0 2px 10px rgba(0,0,0,0.6);
+}
+
+body.dark-mode .hero-home2 .hero-box span,
+body.dark-mode .hero-home2 .stat h3{
+  color:#ffd1a3;
+  text-shadow:0 2px 10px rgba(0,0,0,0.6);
+}
+
 body.dark-mode .header{
   box-shadow:0 6px 18px rgba(0,0,0,0.55);
 }
+

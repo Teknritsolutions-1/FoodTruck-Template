@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,77 +15,121 @@
   </head>
   <body>
     <section class="premium-register">
-      <div class="register-bg-shapes"></div>
+      <div class="auth-top-actions">
+        <button id="themeToggle" class="icon-btn" type="button">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button id="rtlToggle" class="icon-btn" type="button">
+          <i class="fa-solid fa-language"></i>
+        </button>
+      </div>
+  <div class="auth-shell">
+    <div class="auth-panel auth-panel-content">
+      <div class="auth-logo">
+        <a href="./index.html">
+          <span class="logo-icon">
+            <i class="fa-solid fa-truck-fast"></i>
+          </span>
+          <span class="logo-text">StreetBite</span>
+        </a>
+      </div>
 
-      <div class="register-container">
-        <div class="register-card">
-          <div class="auth-logo">
-            <a href="./index.html">
-              <span class="logo-icon">
-                <i class="fa-solid fa-truck-fast"></i>
-              </span>
-              <span class="logo-text">StreetBite</span>
-            </a>
+      <div class="auth-heading">
+        <span class="auth-kicker">Create Account</span>
+        <h2>Join the StreetBite crew</h2>
+        <p>Get exclusive updates, schedule drops, and members-only offers.</p>
+      </div>
+
+      <form class="auth-form">
+        <div class="auth-field">
+          <label for="registerName">Full Name</label>
+          <input id="registerName" type="text" placeholder="Your name" required />
+        </div>
+
+        <div class="auth-field">
+          <label for="registerEmail">Email Address</label>
+          <input
+            id="registerEmail"
+            type="email"
+            placeholder="you@example.com"
+            required
+          />
+        </div>
+
+        <div class="auth-field password-group">
+          <label for="password">Password</label>
+          <input type="password" required id="password" placeholder="Create a password" />
+          <span class="toggle-password" aria-label="Show password">
+            <i class="fa-solid fa-eye"></i>
+          </span>
+        </div>
+
+        <div class="auth-field password-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            required
+            id="confirmPassword"
+            placeholder="Confirm your password"
+          />
+          <span class="toggle-password" aria-label="Show password">
+            <i class="fa-solid fa-eye"></i>
+          </span>
+        </div>
+
+        <button class="register-btn" type="submit">Create Account</button>
+
+        <div class="auth-divider">
+          <span>or sign up with</span>
+        </div>
+
+        <div class="auth-providers">
+          <button class="provider google" type="button">
+            <i class="fa-brands fa-google"></i>
+            Google
+          </button>
+          <button class="provider apple" type="button">
+            <i class="fa-brands fa-apple"></i>
+            Apple
+          </button>
+          <button class="provider facebook" type="button">
+            <i class="fa-brands fa-facebook-f"></i>
+            Facebook
+          </button>
+        </div>
+
+        <div class="auth-footer">
+          Already have an account? <a href="login.html">Login</a>
+        </div>
+      </form>
+    </div>
+
+    <div class="auth-panel auth-panel-visual">
+      <div class="auth-visual-content">
+        <span class="auth-visual-kicker">StreetBite Experiences</span>
+        <h3>Private events, curated menus, premium service</h3>
+        <p>
+          Join to unlock early booking windows, seasonal menus, and VIP rewards.
+        </p>
+        <div class="auth-metrics">
+          <div>
+            <span class="metric-value">48</span>
+            <span class="metric-label">Menu Drops</span>
           </div>
-          <h2>Create Account</h2>
-          <p>Join our food truck community</p>
-
-          <form>
-            <div class="register-group">
-              <input type="text" required />
-              <label>Full Name</label>
-            </div>
-
-            <div class="register-group">
-              <input type="email" required />
-              <label>Email Address</label>
-            </div>
-
-            <div class="register-group password-group">
-              <input type="password" required id="password" />
-              <label>Password</label>
-
-              <span class="toggle-password">
-                <i class="fa-solid fa-eye"></i>
-              </span>
-            </div>
-
-            <div class="register-group password-group">
-              <input type="password" required id="confirmPassword" />
-              <label>Confirm Password</label>
-
-              <span class="toggle-password">
-                <i class="fa-solid fa-eye"></i>
-              </span>
-            </div>
-
-            <button class="register-btn">Create Account</button>
-
-            <div class="register-divider">
-              <span>or sign up with</span>
-            </div>
-
-            <div class="social-register">
-              <button class="google">
-                <i class="fa-brands fa-google"></i>
-              </button>
-
-              <button class="facebook">
-                <i class="fa-brands fa-facebook-f"></i>
-              </button>
-
-              <button class="twitter">
-                <i class="fa-brands fa-x-twitter"></i>
-              </button>
-            </div>
-
-            <div class="login-link">
-              Already have an account?
-              <a href="login.html">Login</a>
-            </div>
-          </form>
+          <div>
+            <span class="metric-value">24/7</span>
+            <span class="metric-label">Support</span>
+          </div>
+          <div>
+            <span class="metric-value">100%</span>
+            <span class="metric-label">Chef Crafted</span>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
+

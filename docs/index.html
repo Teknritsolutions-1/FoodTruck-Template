@@ -46,9 +46,7 @@
 
           <!-- Navigation -->
           <nav class="nav-menu">
-            <div class="menu-close">
-              <i class="fa-solid fa-xmark"></i>
-            </div>
+            <button class="menu-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
             <ul>
               <li class="dropdown">
                 <a href="index.html"
@@ -131,69 +129,117 @@
         </div>
       </div>
     </section>
-    <section class="popular-dishes">
+    <section class="popular-dishes popular-luxe">
       <div class="container">
-        <!-- Section Heading -->
-        <div class="section-heading">
-          <h2>Popular Dishes</h2>
-          <p>
-            Today's favorites with rotating offers, truck-stop highlights, and
-            coupon-ready deals served fresh from our kitchen.
-          </p>
+        <div class="luxe-heading">
+          <div class="luxe-heading-row">
+            <div>
+              <h2>Popular Dishes</h2>
+              <p>
+                Curated bestsellers inspired by top restaurants, plated
+                street-style with chef-led specials and premium pairings.
+              </p>
+            </div>
+            <div class="luxe-actions">
+              <a href="menu.html" class="luxe-link">View Full Menu</a>
+              <a href="contact.html" class="btn-primary luxe-btn"
+                >Book a Tasting</a
+              >
+            </div>
+          </div>
         </div>
 
-        <!-- Dishes Layout -->
-        <div class="dishes-wrapper">
-          <!-- Featured Dish -->
-          <div class="dish-feature">
-            <img src="./assets/images/dish-1.jpg" alt="Chef Special Burger" />
-
-            <div class="dish-content">
+        <div class="luxe-grid">
+          <article class="luxe-feature">
+            <div class="luxe-feature-media">
+              <img src="./assets/images/dish-1.jpg" alt="Chef Special Burger" />
+              <span class="luxe-badge">Chef Signature</span>
+            </div>
+            <div class="luxe-feature-body">
+              <div class="luxe-meta">
+                <span class="luxe-rating">
+                  <i class="fa-solid fa-star"></i> 4.9
+                </span>
+                <span class="luxe-price">$12</span>
+              </div>
               <h3>Chef Special Burger</h3>
               <p>
-                Juicy grilled beef patty with melted cheese, fresh lettuce,
-                tomatoes and our signature sauce.
+                Prime beef, aged cheddar, and house-made sauce on a toasted
+                brioche with crisp farm greens.
               </p>
-
-              <span class="dish-price">$12</span>
+              <div class="luxe-tags">
+                <span>House Sauce</span>
+                <span>Premium Bun</span>
+                <span>Top Pick</span>
+              </div>
             </div>
+          </article>
+
+          <div class="luxe-cards">
+            <article class="luxe-card">
+              <img
+                class="luxe-card-thumb"
+                src="./assets/images/dish-2.jpg"
+                alt="Street Tacos"
+              />
+              <div class="luxe-card-body">
+                <div class="luxe-card-title">
+                  <h4>Street Tacos</h4>
+                  <span>$8</span>
+                </div>
+                <p>Three tacos, citrus slaw, and signature chipotle crema.</p>
+                <div class="luxe-card-meta">Limited Offer</div>
+              </div>
+            </article>
+
+            <article class="luxe-card">
+              <img
+                class="luxe-card-thumb"
+                src="./assets/images/dish-3.jpg"
+                alt="Loaded Fries"
+              />
+              <div class="luxe-card-body">
+                <div class="luxe-card-title">
+                  <h4>Loaded Fries</h4>
+                  <span>$7</span>
+                </div>
+                <p>Parmesan fries, truffle aioli, and slow-roasted garlic.</p>
+                <div class="luxe-card-meta">Chef Favorite</div>
+              </div>
+            </article>
+
+            <article class="luxe-card">
+              <img
+                class="luxe-card-thumb"
+                src="./assets/images/dish-4.jpg"
+                alt="Chicken Wrap"
+              />
+              <div class="luxe-card-body">
+                <div class="luxe-card-title">
+                  <h4>Chicken Wrap</h4>
+                  <span>$9</span>
+                </div>
+                <p>Herb chicken, charred veggies, and citrus tahini.</p>
+                <div class="luxe-card-meta">New Drop</div>
+              </div>
+            </article>
+
+            <article class="luxe-card">
+              <img
+                class="luxe-card-thumb"
+                src="./assets/images/dish-5.jpg"
+                alt="BBQ Sandwich"
+              />
+              <div class="luxe-card-body">
+                <div class="luxe-card-title">
+                  <h4>BBQ Sandwich</h4>
+                  <span>$10</span>
+                </div>
+                <p>Smoked brisket, pickled onions, and espresso BBQ glaze.</p>
+                <div class="luxe-card-meta">Weekend Special</div>
+              </div>
+            </article>
           </div>
-
-          <!-- Dish Grid -->
-          <div class="dish-grid">
-            <div class="dish-card">
-              <img src="./assets/images/dish-2.jpg" alt="Street Tacos" />
-              <h4>Street Tacos</h4>
-              <p>Limited-time offers and combo deals available this week.</p>
-              <span>$8</span>
-            </div>
-
-            <div class="dish-card">
-              <img src="./assets/images/dish-3.jpg" alt="Loaded Fries" />
-              <h4>Loaded Fries</h4>
-              <p>Ask about restaurant specials and seasonal add-ons.</p>
-              <span>$7</span>
-            </div>
-
-            <div class="dish-card">
-              <img src="./assets/images/dish-4.jpg" alt="Chicken Wrap" />
-              <h4>Chicken Wrap</h4>
-              <p>Chef favorites with rotating coupon-ready bundles.</p>
-              <span>$9</span>
-            </div>
-
-            <div class="dish-card">
-              <img src="./assets/images/dish-5.jpg" alt="BBQ Sandwich" />
-              <h4>BBQ Sandwich</h4>
-              <p>Restaurant details and offers updated every weekend.</p>
-              <span>$10</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- CTA -->
-        <div class="menu-cta">
-          <a href="menu.html" class="btn-menu">View Full Menu</a>
         </div>
       </div>
     </section>
@@ -698,3 +744,5 @@
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
+
+
