@@ -6,20 +6,23 @@ if (themeBtn && themeIcon) {
   // Load saved theme
   if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-mode");
-    themeIcon.classList.remove("fa-sun");
-    themeIcon.classList.add("fa-moon");
+    // In dark mode, show the sun to indicate switching back to light.
+    themeIcon.classList.remove("fa-moon");
+    themeIcon.classList.add("fa-sun");
   }
 
   themeBtn.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
 
     if (document.body.classList.contains("dark-mode")) {
-      themeIcon.classList.remove("fa-sun");
-      themeIcon.classList.add("fa-moon");
-      localStorage.setItem("theme", "dark");
-    } else {
+      // Show sun icon when dark mode is active.
       themeIcon.classList.remove("fa-moon");
       themeIcon.classList.add("fa-sun");
+      localStorage.setItem("theme", "dark");
+    } else {
+      // Show moon icon when light mode is active.
+      themeIcon.classList.remove("fa-sun");
+      themeIcon.classList.add("fa-moon");
       localStorage.setItem("theme", "light");
     }
   });
