@@ -99,6 +99,26 @@ function syncNavActionsPlacement() {
 syncNavActionsPlacement();
 window.addEventListener("resize", syncNavActionsPlacement);
 
+let toastTimeout;
+
+function showSiteToast(message) {
+  let toast = document.querySelector(".site-toast");
+
+  if (!toast) {
+    toast = document.createElement("div");
+    toast.className = "site-toast";
+    document.body.appendChild(toast);
+  }
+
+  toast.textContent = message;
+  toast.classList.add("active");
+
+  clearTimeout(toastTimeout);
+  toastTimeout = setTimeout(() => {
+    toast.classList.remove("active");
+  }, 2600);
+}
+
 /* open menu */
 
 if (hamburger && navMenu) {
@@ -276,6 +296,28 @@ filterButtons.forEach(btn => {
   });
 
 });
+
+const blogFilters = document.querySelectorAll(".blog-filter");
+const blogCards = document.querySelectorAll(".blog-card");
+
+if (blogFilters.length && blogCards.length) {
+  blogFilters.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const filter = btn.textContent.trim().toLowerCase();
+
+      blogFilters.forEach((item) => item.classList.remove("active"));
+      btn.classList.add("active");
+
+      blogCards.forEach((card) => {
+        const tag = card.querySelector(".blog-tag");
+        const category = tag ? tag.textContent.trim().toLowerCase() : "";
+        const shouldShow = filter === "all" || category === filter;
+
+        card.style.display = shouldShow ? "block" : "none";
+      });
+    });
+  });
+}
 /* ================= QUICK VIEW MODAL ================= */
 
 const quickButtons = document.querySelectorAll(".quick-view");
@@ -491,3 +533,121 @@ if (daysEl && hoursEl && minutesEl && secondsEl) {
 
   },1000);
 }
+
+document.querySelectorAll(".package-btn, .modal-order-btn").forEach((button) => {
+  button.addEventListener("click", () => {
+    window.location.href = "contact.html#bookingForm";
+  });
+});
+
+document.querySelectorAll(".about-btn[href='#']").forEach((link) => {
+  link.setAttribute("href", "about.html");
+});
+
+document.querySelectorAll(".schedule-card a[href='#']").forEach((link) => {
+  link.setAttribute("href", "schedule.html");
+});
+
+document.querySelectorAll(".blog-sidebar a[href='#'], .blog-tags a[href='#']").forEach((link) => {
+  link.setAttribute("href", "blog.html");
+});
+
+document.querySelectorAll(".auth-options a[href='#']").forEach((link) => {
+  link.setAttribute("href", "contact.html");
+});
+
+const socialHrefMap = {
+  "fa-instagram": "https://www.instagram.com/",
+  "fa-facebook-f": "https://www.facebook.com/",
+  "fa-twitter": "https://twitter.com/",
+  "fa-linkedin-in": "https://www.linkedin.com/",
+};
+
+document.querySelectorAll("a[href='#']").forEach((link) => {
+  const icon = link.querySelector("i");
+
+  if (!icon) {
+    return;
+  }
+
+  const socialClass = Object.keys(socialHrefMap).find((name) => icon.classList.contains(name));
+
+  if (!socialClass) {
+    return;
+  }
+
+  link.setAttribute("href", socialHrefMap[socialClass]);
+  link.setAttribute("target", "_blank");
+  link.setAttribute("rel", "noopener noreferrer");
+});
+
+document.querySelectorAll(".footer-newsletter form").forEach((formEl) => {
+  formEl.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const emailInput = this.querySelector("input[type='email']");
+
+    if (emailInput && !emailInput.reportValidity()) {
+      return;
+    }
+
+    this.reset();
+    showSiteToast("Thanks for subscribing to StreetBite updates.");
+  });
+});
+
+const comingSoonSignup = document.querySelector(".comingsoon-subscribe");
+
+if (comingSoonSignup) {
+  const emailInput = comingSoonSignup.querySelector("input[type='email']");
+  const notifyButton = comingSoonSignup.querySelector("button");
+
+  const submitComingSoon = () => {
+    if (!emailInput || !emailInput.reportValidity()) {
+      return;
+    }
+
+    emailInput.value = "";
+    showSiteToast("We'll notify you when the site launches.");
+  };
+
+  if (notifyButton) {
+    notifyButton.addEventListener("click", submitComingSoon);
+  }
+
+  if (emailInput) {
+    emailInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        submitComingSoon();
+      }
+    });
+  }
+}
+
+const authForm = document.querySelector(".auth-form");
+
+if (authForm) {
+  authForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    if (!this.reportValidity()) {
+      return;
+    }
+
+    const isRegisterPage = Boolean(document.querySelector(".premium-register"));
+
+    this.reset();
+    showSiteToast(isRegisterPage ? "Account created. Redirecting to sign in." : "Sign-in successful. Redirecting home.");
+
+    setTimeout(() => {
+      window.location.href = isRegisterPage ? "login.html" : "index.html";
+    }, 900);
+  });
+}
+
+document.querySelectorAll(".provider").forEach((button) => {
+  button.addEventListener("click", () => {
+    showSiteToast("Social sign-in is not connected in this demo yet.");
+  });
+});

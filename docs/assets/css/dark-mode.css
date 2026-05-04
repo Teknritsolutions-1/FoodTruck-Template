@@ -74,6 +74,11 @@ body.dark-mode .nav-menu .nav-actions .icon-btn{
 body.dark-mode .logo-text{
 color:#fff;
 }
+
+body.dark-mode .site-toast{
+  background:#f3f4f6;
+  color:#111827;
+}
 /* =========================
    DARK MODE - POPULAR DISHES
 ========================= */
