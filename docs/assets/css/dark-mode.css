@@ -61,6 +61,16 @@ body.dark-mode .nav-menu .dropdown-menu{
 body.dark-mode .nav-menu .dropdown-menu a{
   color:#ffffff;
 }
+
+body.dark-mode .nav-menu .nav-actions{
+  border-top-color:#2f2f2f;
+}
+
+body.dark-mode .nav-menu .nav-actions .icon-btn{
+  background:#1f1f1f;
+  border-color:#2f2f2f;
+}
+
 body.dark-mode .logo-text{
 color:#fff;
 }

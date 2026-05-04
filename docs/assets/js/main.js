@@ -56,6 +56,48 @@ if (rtlBtn) {
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const closeBtn = document.querySelector(".nav-menu .menu-close");
+const navWrapper = document.querySelector(".nav-wrapper");
+const navActions = document.querySelector(".nav-actions");
+const compactNavBreakpoint = 1023;
+let navActionsPlaceholder = null;
+
+if (navWrapper && navActions) {
+  navActionsPlaceholder = document.createComment("nav-actions-placeholder");
+  navWrapper.insertBefore(navActionsPlaceholder, navActions);
+}
+
+function isCompactNav() {
+  return window.innerWidth <= compactNavBreakpoint;
+}
+
+function syncNavActionsPlacement() {
+  if (!navMenu || !navWrapper || !navActions) {
+    return;
+  }
+
+  if (isCompactNav()) {
+    if (navActions.parentElement !== navMenu) {
+      navMenu.appendChild(navActions);
+    }
+    return;
+  }
+
+  if (navActions.parentElement !== navWrapper) {
+    if (navActionsPlaceholder) {
+      navWrapper.insertBefore(navActions, navActionsPlaceholder.nextSibling);
+    } else {
+      navWrapper.appendChild(navActions);
+    }
+  }
+
+  navMenu.classList.remove("active");
+  document.querySelectorAll(".dropdown.open").forEach((dropdown) => {
+    dropdown.classList.remove("open");
+  });
+}
+
+syncNavActionsPlacement();
+window.addEventListener("resize", syncNavActionsPlacement);
 
 /* open menu */
 
@@ -79,7 +121,7 @@ document.querySelectorAll(".dropdown > a").forEach(menu => {
 
 menu.addEventListener("click", function(e){
 
-if(window.innerWidth <= 768){
+if(isCompactNav()){
 
 e.preventDefault();
 this.parentElement.classList.toggle("open");
